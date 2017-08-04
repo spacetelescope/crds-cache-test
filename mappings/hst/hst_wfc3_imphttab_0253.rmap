@@ -1,0 +1,23 @@
+header = {
+    'derived_from' : 'hst_wfc3_imphttab_0252.rmap',
+    'filekind' : 'IMPHTTAB',
+    'instrument' : 'WFC3',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_wfc3_imphttab_0253.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('DETECTOR',), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'TABLE',
+    'reffile_required' : 'NO',
+    'reffile_switch' : 'PHOTCORR',
+    'rmap_relevance' : '(PHOTCORR != "OMIT")',
+    'sha1sum' : 'f7dd03e9ad486e82ca427528658dfa127b9a802a',
+}
+
+selector = Match({
+    ('IR',) : UseAfter({
+        '2009-05-08 00:00:00' : 'wbj1825ri_imp.fits',
+    }),
+    ('UVIS',) : UseAfter({
+        '2009-05-08 00:00:00' : '0bi2206ti_imp.fits',
+    }),
+})

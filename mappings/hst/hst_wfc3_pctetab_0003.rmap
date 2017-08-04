@@ -1,0 +1,23 @@
+header = {
+    'derived_from' : 'hst_wfc3_pctetab_0002.rmap',
+    'filekind' : 'PCTETAB',
+    'filetype' : 'PIXCTE',
+    'instrument' : 'WFC3',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_wfc3_pctetab_0003.rmap',
+    'observatory' : 'HST',
+    'parkey' : ((), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'TABLE',
+    'reffile_required' : 'YES',
+    'reffile_switch' : 'PCTECORR',
+    'rmap_relevance' : '(DETECTOR=="UVIS" and PCTECORR == "PERFORM")',
+    'sha1sum' : '93957bb6e5614ecf17336d200c306daad0c35d42',
+    'suffix' : 'cte',
+    'text_descr' : 'Pixel CTE Correction Table',
+}
+
+selector = Match({
+    () : UseAfter({
+        '2009-05-10 00:00:00' : 'zcv2057mi_cte.fits',
+    }),
+})

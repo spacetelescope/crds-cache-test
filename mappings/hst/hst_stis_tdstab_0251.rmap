@@ -1,0 +1,29 @@
+header = {
+    'derived_from' : 'hst_stis_tdstab_0250.rmap',
+    'filekind' : 'TDSTAB',
+    'instrument' : 'STIS',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_stis_tdstab_0251.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('DETECTOR',), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'TABLE',
+    'reffile_required' : 'NONE',
+    'reffile_switch' : 'NONE',
+    'rmap_relevance' : 'ALWAYS',
+    'sha1sum' : '5034b2e41e3378a807e4255fefad2b78d3266a80',
+}
+
+selector = Match({
+    ('CCD',) : UseAfter({
+        '1996-10-01 00:00:00' : 't9a1003so_tds.fits',
+        '2009-05-01 00:00:00' : '13a1941eo_tds.fits',
+    }),
+    ('FUV-MAMA',) : UseAfter({
+        '1996-10-01 00:00:00' : 'q9s1550ko_tds.fits',
+        '2009-05-01 00:00:00' : '13a1941fo_tds.fits',
+    }),
+    ('NUV-MAMA',) : UseAfter({
+        '1996-10-01 00:00:00' : 'q9s1550lo_tds.fits',
+        '2009-05-01 00:00:00' : '13a1941go_tds.fits',
+    }),
+})

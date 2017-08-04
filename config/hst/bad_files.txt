@@ -1,5 +1,14 @@
+04p2041cj_fls.fits
 l2d0959cj_pfl.fits
+l5a13436j_fls.fits
 lbe1209bj_pfl.fits
 m1l0942nj_pfl.fits
 m5t12222j_pfl.fits
+nad1455fj_fls.fits
+nad1455gj_fls.fits
+nad14594j_fls.fits
+nad1502pj_fls.fits
+x4c1748mj_fls.fits
+y6i20475j_fls.fits
 z1r1943fl_bpix.fits
+z4g13201j_fls.fits

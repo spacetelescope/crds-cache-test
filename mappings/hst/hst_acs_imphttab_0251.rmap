@@ -1,0 +1,26 @@
+header = {
+    'derived_from' : 'hst_acs_imphttab_0250.rmap',
+    'filekind' : 'IMPHTTAB',
+    'instrument' : 'ACS',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_acs_imphttab_0251.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('DETECTOR',), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'TABLE',
+    'reffile_required' : 'YES',
+    'reffile_switch' : 'PHOTCORR',
+    'rmap_relevance' : '(PHOTCORR != "OMIT")',
+    'sha1sum' : 'f1c0e45f358ad7940db07e9b18e2494f7f7a314b',
+}
+
+selector = Match({
+    ('HRC',) : UseAfter({
+        '2002-03-01 00:00:00' : '08b1846tj_imp.fits',
+    }),
+    ('SBC',) : UseAfter({
+        '2002-03-01 00:00:00' : 'xb61855jj_imp.fits',
+    }),
+    ('WFC',) : UseAfter({
+        '2002-03-01 00:00:00' : '08b18470j_imp.fits',
+    }),
+})

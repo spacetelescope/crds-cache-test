@@ -1,0 +1,26 @@
+header = {
+    'derived_from' : 'hst_stis_ccdtab_0250.rmap',
+    'filekind' : 'CCDTAB',
+    'instrument' : 'STIS',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_stis_ccdtab_0251.rmap',
+    'observatory' : 'HST',
+    'parkey' : ((), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'TABLE',
+    'reffile_required' : 'NONE',
+    'reffile_switch' : 'NONE',
+    'rmap_relevance' : '(DETECTOR == "CCD")',
+    'sha1sum' : '56b8bcd24536a6156e56fea08ba08ea97eaf1744',
+}
+
+selector = Match({
+    () : UseAfter({
+        '1996-10-01 00:00:00' : '0841734eo_ccd.fits',
+        '1999-12-26 00:00:00' : '0841734ao_ccd.fits',
+        '1999-12-29 00:00:00' : '0841734bo_ccd.fits',
+        '2000-01-09 00:00:00' : '0841734co_ccd.fits',
+        '2001-07-10 00:00:00' : '0841734do_ccd.fits',
+        '2009-05-11 00:00:00' : '0841734fo_ccd.fits',
+        '2014-05-15 00:00:00' : '08417349o_ccd.fits',
+    }),
+})
