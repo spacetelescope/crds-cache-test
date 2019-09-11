@@ -1,0 +1,28 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_miri_linearity_0009.rmap',
+    'filekind' : 'LINEARITY',
+    'instrument' : 'MIRI',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_miri_linearity_0010.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.SUBARRAY.NAME', 'META.INSTRUMENT.BAND', 'META.INSTRUMENT.FILTER'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '8810eecded9254add391fea415da756b24d0f92d',
+    'substitutions' : {
+        'META.SUBARRAY.NAME' : {
+            'GENERIC' : 'N/A',
+        },
+    },
+}
+
+selector = Match({
+    ('MIRIFULONG', 'GENERIC', 'N/A', 'N/A') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_linearity_0012.fits',
+    }),
+    ('MIRIFUSHORT', 'GENERIC', 'N/A', 'N/A') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_linearity_0013.fits',
+    }),
+    ('MIRIMAGE', 'GENERIC', 'N/A', 'N/A') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_linearity_0014.fits',
+    }),
+})

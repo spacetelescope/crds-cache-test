@@ -1,0 +1,33 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_miri_fringe_0008.rmap',
+    'filekind' : 'FRINGE',
+    'instrument' : 'MIRI',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_miri_fringe_0009.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.INSTRUMENT.BAND'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '16727430bd2d350b67433f02ceb7719ff16bb6cf',
+}
+
+selector = Match({
+    ('MIRIFULONG', 'LONG') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_fringe_0019.fits',
+    }),
+    ('MIRIFULONG', 'MEDIUM') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_fringe_0020.fits',
+    }),
+    ('MIRIFULONG', 'SHORT') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_fringe_0021.fits',
+    }),
+    ('MIRIFUSHORT', 'LONG') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_fringe_0022.fits',
+    }),
+    ('MIRIFUSHORT', 'MEDIUM') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_fringe_0023.fits',
+    }),
+    ('MIRIFUSHORT', 'SHORT') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_fringe_0024.fits',
+    }),
+    ('MIRIMAGE', 'N/A') : 'N/A',
+})

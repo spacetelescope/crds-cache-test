@@ -1,0 +1,17 @@
+header = {
+    'derived_from' : 'nirspec_photom.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'photom',
+    'filetype' : 'PHOTOM',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_photom_0006.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.EXPOSURE.TYPE',),),
+    'sha1sum' : '11f421e844852b8577305a4516072a5308b70bcd',
+    'suffix' : 'photom',
+    'text_descr' : 'Absolute Calibration',
+}
+
+selector = Match({
+})

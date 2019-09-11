@@ -1,0 +1,19 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nirspec_cubepar.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'CUBEPAR',
+    'filetype' : 'CUBEPAR',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_cubepar_0001.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.EXPOSURE.TYPE',), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '1cfe6566db0728f9615162a2b8956883f7090a14',
+    'suffix' : 'cubepar',
+    'text_descr' : 'IFU Cube defaults',
+    'unique_rowkeys' : ('GRATING', 'FILTER'),
+}
+
+selector = Match({
+})

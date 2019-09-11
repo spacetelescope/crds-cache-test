@@ -1,0 +1,28 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_niriss_readnoise_0006.rmap',
+    'filekind' : 'READNOISE',
+    'instrument' : 'NIRISS',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_niriss_readnoise_0007.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.EXPOSURE.READPATT', 'META.SUBARRAY.NAME'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '83a5c877ed9a9ca9e08ab3ae4dd254b74bb96cf4',
+    'substitutions' : {
+        'META.SUBARRAY.NAME' : {
+            'GENERIC' : 'N/A',
+        },
+    },
+}
+
+selector = Match({
+    ('NIS', 'N/A', 'GENERIC') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_niriss_readnoise_0001.fits',
+    }),
+    ('NIS', 'NISRAPID', 'FULL') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_niriss_readnoise_0002.fits',
+    }),
+    ('NIS', 'NISRAPID', 'GENERIC') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_niriss_readnoise_0003.fits',
+    }),
+})

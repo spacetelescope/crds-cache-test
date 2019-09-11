@@ -1,0 +1,26 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_fgs_flat_0005.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'FLAT',
+    'filetype' : 'PIXEL-TO-PIXEL FLAT',
+    'instrument' : 'FGS',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_fgs_flat_0006.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR',), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '077301936b072d21a2a05b4db224d726140b77ce',
+    'suffix' : 'flat',
+    'text_descr' : 'Flat Field',
+}
+
+selector = Match({
+    'GUIDER1' : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_fgs_flat_0001.fits',
+        '2015-11-01 00:00:00' : 'jwst_fgs_flat_0010.fits',
+    }),
+    'GUIDER2' : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_fgs_flat_0002.fits',
+        '2015-11-01 00:00:00' : 'jwst_fgs_flat_0009.fits',
+    }),
+})

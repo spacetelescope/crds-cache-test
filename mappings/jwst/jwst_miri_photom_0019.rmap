@@ -1,0 +1,72 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_miri_photom_0017.rmap',
+    'filekind' : 'PHOTOM',
+    'instrument' : 'MIRI',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_miri_photom_0019.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.INSTRUMENT.BAND'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '73880abde6410036136ddd3f6be7f239b7301ea2',
+}
+
+selector = Match({
+    ('MIRIFULONG', 'LONG') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_photom_0026.fits',
+    }),
+    ('MIRIFULONG', 'LONG-MEDIUM') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_photom_0025.fits',
+    }),
+    ('MIRIFULONG', 'LONG-SHORT') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_photom_0040.fits',
+    }),
+    ('MIRIFULONG', 'MEDIUM') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_photom_0038.fits',
+    }),
+    ('MIRIFULONG', 'MEDIUM-LONG') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_photom_0031.fits',
+    }),
+    ('MIRIFULONG', 'MEDIUM-SHORT') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_photom_0039.fits',
+    }),
+    ('MIRIFULONG', 'SHORT') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_photom_0036.fits',
+    }),
+    ('MIRIFULONG', 'SHORT-LONG') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_photom_0035.fits',
+    }),
+    ('MIRIFULONG', 'SHORT-MEDIUM') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_photom_0032.fits',
+    }),
+    ('MIRIFUSHORT', 'LONG') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_photom_0028.fits',
+    }),
+    ('MIRIFUSHORT', 'LONG-MEDIUM') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_photom_0041.fits',
+    }),
+    ('MIRIFUSHORT', 'LONG-SHORT') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_photom_0037.fits',
+    }),
+    ('MIRIFUSHORT', 'MEDIUM') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_photom_0029.fits',
+    }),
+    ('MIRIFUSHORT', 'MEDIUM-LONG') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_photom_0027.fits',
+    }),
+    ('MIRIFUSHORT', 'MEDIUM-SHORT') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_photom_0033.fits',
+    }),
+    ('MIRIFUSHORT', 'SHORT') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_photom_0024.fits',
+    }),
+    ('MIRIFUSHORT', 'SHORT-LONG') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_photom_0034.fits',
+    }),
+    ('MIRIFUSHORT', 'SHORT-MEDIUM') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_photom_0030.fits',
+    }),
+    ('MIRIMAGE', 'N/A') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_photom_0012.fits',
+        '2000-01-01 00:00:00' : 'jwst_miri_photom_0014.fits',
+    }),
+})

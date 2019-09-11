@@ -1,0 +1,20 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_miri_psfmask.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'PSFMASK',
+    'filetype' : 'PSFMASK',
+    'instrument' : 'MIRI',
+    'ld_tpn' : 'miri_psfmask_ld.tpn',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_miri_psfmask_0001.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.FILTER', 'META.INSTRUMENT.CORONAGRAPH', 'META.SUBARRAY.NAME'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : 'b6a3b9f0382fb778dc4c1e6ca06cf1cbc526dc34',
+    'suffix' : 'psfmask',
+    'text_descr' : 'PSF Mask',
+    'tpn' : 'miri_psfmask.tpn',
+}
+
+selector = Match({
+})

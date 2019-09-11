@@ -1,0 +1,23 @@
+header = {
+    'derived_from' : 'jwst_fgs_distortion_0001.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'DISTORTION',
+    'filetype' : 'DISTORTION',
+    'instrument' : 'FGS',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_fgs_distortion_0002.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.EXPOSURE.TYPE', 'META.INSTRUMENT.DETECTOR'),),
+    'reference_to_dataset' : {
+        'DETECTOR' : 'META.INSTRUMENT.DETECTOR',
+        'EXP_TYPE' : 'META.EXPOSURE.TYPE',
+    },
+    'sha1sum' : 'd689064e7548c54d0c8ce0301aa0b2628a822dc4',
+    'suffix' : 'distortion',
+    'text_descr' : 'Distortion',
+}
+
+selector = Match({
+    ('FGS_IMAGE', 'GUIDER1') : 'jwst_fgs_distortion_0001.asdf',
+    ('FGS_IMAGE', 'GUIDER2') : 'jwst_fgs_distortion_0002.asdf',
+})

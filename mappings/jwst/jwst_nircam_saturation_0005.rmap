@@ -1,0 +1,44 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nircam_saturation_0004.rmap',
+    'filekind' : 'SATURATION',
+    'instrument' : 'NIRCAM',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nircam_saturation_0005.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR',), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '23d58c451635ecfaf532c003529e61436fe518b3',
+}
+
+selector = Match({
+    'NRCA1' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_saturation_0049.fits',
+    }),
+    'NRCA2' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_saturation_0031.fits',
+    }),
+    'NRCA3' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_saturation_0050.fits',
+    }),
+    'NRCA4' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_saturation_0051.fits',
+    }),
+    'NRCALONG' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_saturation_0052.fits',
+    }),
+    'NRCB1' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_saturation_0053.fits',
+    }),
+    'NRCB2' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_saturation_0054.fits',
+    }),
+    'NRCB3' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_saturation_0055.fits',
+    }),
+    'NRCB4' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_saturation_0056.fits',
+    }),
+    'NRCBLONG' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_saturation_0057.fits',
+    }),
+})

@@ -1,0 +1,73 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_miri_reset_0006.rmap',
+    'filekind' : 'RESET',
+    'instrument' : 'MIRI',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_miri_reset_0007.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.SUBARRAY.NAME', 'META.EXPOSURE.READPATT'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '65be8c5c55ee7d6b9010158fb589020cd050515a',
+    'substitutions' : {
+        'META.SUBARRAY.NAME' : {
+            'GENERIC' : 'N/A',
+        },
+    },
+}
+
+selector = Match({
+    ('MIRIFULONG', 'FULL', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_reset_0031.fits',
+    }),
+    ('MIRIFULONG', 'GENERIC', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_reset_0016.fits',
+    }),
+    ('MIRIFULONG', 'GENERIC', 'SLOW') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_reset_0017.fits',
+    }),
+    ('MIRIFUSHORT', 'FULL', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_reset_0032.fits',
+    }),
+    ('MIRIFUSHORT', 'GENERIC', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_reset_0018.fits',
+    }),
+    ('MIRIFUSHORT', 'GENERIC', 'SLOW') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_reset_0019.fits',
+    }),
+    ('MIRIMAGE', 'BRIGHTSKY', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_reset_0020.fits',
+    }),
+    ('MIRIMAGE', 'FULL', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_reset_0033.fits',
+    }),
+    ('MIRIMAGE', 'GENERIC', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_reset_0025.fits',
+    }),
+    ('MIRIMAGE', 'GENERIC', 'SLOW') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_reset_0030.fits',
+    }),
+    ('MIRIMAGE', 'MASK1065', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_reset_0021.fits',
+    }),
+    ('MIRIMAGE', 'MASK1140', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_reset_0022.fits',
+    }),
+    ('MIRIMAGE', 'MASK1550', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_reset_0023.fits',
+    }),
+    ('MIRIMAGE', 'MASKLYOT', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_reset_0024.fits',
+    }),
+    ('MIRIMAGE', 'SLITLESSPRISM', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_reset_0026.fits',
+    }),
+    ('MIRIMAGE', 'SUB128', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_reset_0027.fits',
+    }),
+    ('MIRIMAGE', 'SUB256', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_reset_0028.fits',
+    }),
+    ('MIRIMAGE', 'SUB64', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_reset_0029.fits',
+    }),
+})

@@ -1,0 +1,22 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nirspec_saturation_0005.rmap',
+    'filekind' : 'SATURATION',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_saturation_0008.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR',), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '3c29638b170159c6fac46f636efe834a288aed94',
+}
+
+selector = Match({
+    'NRS1' : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nirspec_saturation_0006.fits',
+        '2013-01-01 00:00:00' : 'jwst_nirspec_saturation_0010.fits',
+    }),
+    'NRS2' : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nirspec_saturation_0007.fits',
+        '2013-01-01 00:00:00' : 'jwst_nirspec_saturation_0011.fits',
+    }),
+})

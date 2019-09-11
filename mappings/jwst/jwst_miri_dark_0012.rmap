@@ -1,0 +1,67 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_miri_dark_0011.rmap',
+    'filekind' : 'DARK',
+    'instrument' : 'MIRI',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_miri_dark_0012.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.EXPOSURE.READPATT', 'META.SUBARRAY.NAME'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '8226126838faf80e5f78a438a1af7b95ae2af4e0',
+    'substitutions' : {
+        'META.SUBARRAY.NAME' : {
+            'GENERIC' : 'N/A',
+        },
+    },
+}
+
+selector = Match({
+    ('MIRIFULONG', 'FAST', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0029.fits',
+    }),
+    ('MIRIFULONG', 'SLOW', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0030.fits',
+    }),
+    ('MIRIFUSHORT', 'FAST', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0031.fits',
+    }),
+    ('MIRIFUSHORT', 'SLOW', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0032.fits',
+    }),
+    ('MIRIMAGE', 'FAST', 'BRIGHTSKY') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0033.fits',
+    }),
+    ('MIRIMAGE', 'FAST', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0034.fits',
+    }),
+    ('MIRIMAGE', 'FAST', 'MASK1065') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0035.fits',
+    }),
+    ('MIRIMAGE', 'FAST', 'MASK1140') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0036.fits',
+    }),
+    ('MIRIMAGE', 'FAST', 'MASK1550') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0037.fits',
+    }),
+    ('MIRIMAGE', 'FAST', 'MASKLYOT') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0038.fits',
+    }),
+    ('MIRIMAGE', 'FAST', 'SUB128') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0040.fits',
+    }),
+    ('MIRIMAGE', 'FAST', 'SUB256') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0041.fits',
+    }),
+    ('MIRIMAGE', 'FAST', 'SUB64') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0042.fits',
+    }),
+    ('MIRIMAGE', 'FAST', 'SUBPRISM') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0039.fits',
+    }),
+    ('MIRIMAGE', 'SLOW', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0043.fits',
+    }),
+    ('MIRIMAGE', 'SLOW', 'SUBPRISM') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0025.fits',
+    }),
+})

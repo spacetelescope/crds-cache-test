@@ -1,0 +1,27 @@
+header = {
+    'derived_from' : 'jwst_nircam_trapdensity_0001.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'trapdensity',
+    'filetype' : 'TRAPDENSITY',
+    'instrument' : 'NIRCAM',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nircam_trapdensity_0002.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR',),),
+    'sha1sum' : '4e6782f1fa87f0bcfdd0687cfd4b8a0687a075ae',
+    'suffix' : 'trapdensity',
+    'text_descr' : 'Trap Density For Persistence Step',
+}
+
+selector = Match({
+    'NRCA1' : 'jwst_nircam_trapdensity_0010.fits',
+    'NRCA2' : 'jwst_nircam_trapdensity_0006.fits',
+    'NRCA3' : 'jwst_nircam_trapdensity_0008.fits',
+    'NRCA4' : 'jwst_nircam_trapdensity_0002.fits',
+    'NRCALONG' : 'jwst_nircam_trapdensity_0004.fits',
+    'NRCB1' : 'jwst_nircam_trapdensity_0001.fits',
+    'NRCB2' : 'jwst_nircam_trapdensity_0005.fits',
+    'NRCB3' : 'jwst_nircam_trapdensity_0007.fits',
+    'NRCB4' : 'jwst_nircam_trapdensity_0009.fits',
+    'NRCBLONG' : 'jwst_nircam_trapdensity_0003.fits',
+})

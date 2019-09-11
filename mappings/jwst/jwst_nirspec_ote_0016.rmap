@@ -1,0 +1,32 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nirspec_ote_0015.rmap',
+    'file_ext' : '.asdf',
+    'filekind' : 'ote',
+    'filetype' : 'OTE',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_ote_0016.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.EXPOSURE.TYPE',), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'reference_to_dataset' : {
+        'EXP_TYPE' : 'META.EXPOSURE.TYPE',
+    },
+    'sha1sum' : 'c7446e7e7ed5627ae4461a08b5f269cd95955615',
+    'suffix' : 'ote',
+    'text_descr' : 'NIRSPEC OTE Description',
+}
+
+selector = Match({
+    'N/A' : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nirspec_ote_0002.asdf',
+    }),
+    'NRS_AUTOFLAT' : 'N/A',
+    'NRS_AUTOWAVE|NRS_TACQ|NRS_TASLIT|NRS_TACONFIRM|NRS_CONFIRM|NRS_FIXEDSLIT|NRS_IFU|NRS_MSASPEC|NRS_IMAGE|NRS_FOCUS|NRS_MIMF|NRS_BOTA|NRS_LAMP|NRS_BRIGHTOBJ' : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_nirspec_ote_0004.asdf',
+    }),
+    'NRS_BOTA|NRS_BRIGHTOBJ|NRS_CONFIRM|NRS_FIXEDSLIT|NRS_FOCUS|NRS_IFU|NRS_IMAGE|NRS_LAMP|NRS_MIMF|NRS_MSASPEC|NRS_TACONFIRM|NRS_TACQ|NRS_TASLIT' : UseAfter({
+        '2016-03-01 09:08:05' : 'jwst_nirspec_ote_0005.asdf',
+    }),
+    'NRS_DARK' : 'N/A',
+})

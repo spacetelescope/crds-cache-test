@@ -1,0 +1,404 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nircam_flat_0001.rmap',
+    'filekind' : 'FLAT',
+    'instrument' : 'NIRCAM',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nircam_flat_0002.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.INSTRUMENT.FILTER', 'META.INSTRUMENT.PUPIL'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '803e071bb404fdca576d7662172ca660129f0a73',
+}
+
+selector = Match({
+    ('NRCA1', 'ANY', 'ANY') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_flat_0000.fits',
+    }),
+    ('NRCA1', 'F115W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0054.fits',
+    }),
+    ('NRCA1', 'F140M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0105.fits',
+    }),
+    ('NRCA1', 'F150W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0024.fits',
+    }),
+    ('NRCA1', 'F150W2', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0082.fits',
+    }),
+    ('NRCA1', 'F150W2', 'F162M') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0137.fits',
+    }),
+    ('NRCA1', 'F150W2', 'F164N') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0131.fits',
+    }),
+    ('NRCA1', 'F182M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0089.fits',
+    }),
+    ('NRCA1', 'F187N', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0113.fits',
+    }),
+    ('NRCA1', 'F200W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0033.fits',
+    }),
+    ('NRCA1', 'F210M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0086.fits',
+    }),
+    ('NRCA1', 'F212N', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0022.fits',
+    }),
+    ('NRCA2', 'ANY', 'ANY') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_flat_0002.fits',
+    }),
+    ('NRCA2', 'F115W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0053.fits',
+    }),
+    ('NRCA2', 'F140M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0090.fits',
+    }),
+    ('NRCA2', 'F150W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0028.fits',
+    }),
+    ('NRCA2', 'F150W2', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0124.fits',
+    }),
+    ('NRCA2', 'F150W2', 'F162M') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0132.fits',
+    }),
+    ('NRCA2', 'F150W2', 'F164N') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0065.fits',
+    }),
+    ('NRCA2', 'F182M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0129.fits',
+    }),
+    ('NRCA2', 'F187N', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0060.fits',
+    }),
+    ('NRCA2', 'F200W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0036.fits',
+    }),
+    ('NRCA2', 'F210M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0056.fits',
+    }),
+    ('NRCA2', 'F212N', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0041.fits',
+    }),
+    ('NRCA3', 'ANY', 'ANY') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_flat_0003.fits',
+    }),
+    ('NRCA3', 'F115W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0081.fits',
+    }),
+    ('NRCA3', 'F140M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0120.fits',
+    }),
+    ('NRCA3', 'F150W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0138.fits',
+    }),
+    ('NRCA3', 'F150W2', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0030.fits',
+    }),
+    ('NRCA3', 'F150W2', 'F162M') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0043.fits',
+    }),
+    ('NRCA3', 'F150W2', 'F164N') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0118.fits',
+    }),
+    ('NRCA3', 'F182M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0134.fits',
+    }),
+    ('NRCA3', 'F187N', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0032.fits',
+    }),
+    ('NRCA3', 'F200W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0091.fits',
+    }),
+    ('NRCA3', 'F210M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0139.fits',
+    }),
+    ('NRCA3', 'F212N', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0099.fits',
+    }),
+    ('NRCA4', 'ANY', 'ANY') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_flat_0004.fits',
+    }),
+    ('NRCA4', 'F115W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0121.fits',
+    }),
+    ('NRCA4', 'F140M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0021.fits',
+    }),
+    ('NRCA4', 'F150W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0125.fits',
+    }),
+    ('NRCA4', 'F150W2', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0127.fits',
+    }),
+    ('NRCA4', 'F150W2', 'F162M') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0115.fits',
+    }),
+    ('NRCA4', 'F150W2', 'F164N') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0068.fits',
+    }),
+    ('NRCA4', 'F182M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0055.fits',
+    }),
+    ('NRCA4', 'F187N', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0088.fits',
+    }),
+    ('NRCA4', 'F200W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0140.fits',
+    }),
+    ('NRCA4', 'F210M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0025.fits',
+    }),
+    ('NRCA4', 'F212N', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0063.fits',
+    }),
+    ('NRCALONG', 'ANY', 'ANY') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_flat_0005.fits',
+    }),
+    ('NRCALONG', 'F250M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0047.fits',
+    }),
+    ('NRCALONG', 'F277W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0096.fits',
+    }),
+    ('NRCALONG', 'F300M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0084.fits',
+    }),
+    ('NRCALONG', 'F322W2', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0107.fits',
+    }),
+    ('NRCALONG', 'F322W2', 'F323N') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0049.fits',
+    }),
+    ('NRCALONG', 'F335M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0072.fits',
+    }),
+    ('NRCALONG', 'F356W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0128.fits',
+    }),
+    ('NRCALONG', 'F360M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0031.fits',
+    }),
+    ('NRCALONG', 'F410M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0106.fits',
+    }),
+    ('NRCALONG', 'F430M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0079.fits',
+    }),
+    ('NRCALONG', 'F444W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0122.fits',
+    }),
+    ('NRCALONG', 'F444W', 'F405N') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0023.fits',
+    }),
+    ('NRCALONG', 'F444W', 'F466N') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0067.fits',
+    }),
+    ('NRCALONG', 'F444W', 'F470N') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0078.fits',
+    }),
+    ('NRCALONG', 'F460M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0076.fits',
+    }),
+    ('NRCALONG', 'F480M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0042.fits',
+    }),
+    ('NRCB1', 'ANY', 'ANY') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_flat_0006.fits',
+    }),
+    ('NRCB1', 'F115W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0093.fits',
+    }),
+    ('NRCB1', 'F140M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0039.fits',
+    }),
+    ('NRCB1', 'F150W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0071.fits',
+    }),
+    ('NRCB1', 'F150W2', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0083.fits',
+    }),
+    ('NRCB1', 'F150W2', 'F162M') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0077.fits',
+    }),
+    ('NRCB1', 'F150W2', 'F164N') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0044.fits',
+    }),
+    ('NRCB1', 'F182M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0135.fits',
+    }),
+    ('NRCB1', 'F187N', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0126.fits',
+    }),
+    ('NRCB1', 'F200W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0136.fits',
+    }),
+    ('NRCB1', 'F210M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0059.fits',
+    }),
+    ('NRCB1', 'F212N', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0070.fits',
+    }),
+    ('NRCB2', 'ANY', 'ANY') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_flat_0007.fits',
+    }),
+    ('NRCB2', 'F115W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0058.fits',
+    }),
+    ('NRCB2', 'F140M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0080.fits',
+    }),
+    ('NRCB2', 'F150W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0062.fits',
+    }),
+    ('NRCB2', 'F150W2', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0112.fits',
+    }),
+    ('NRCB2', 'F150W2', 'F162M') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0119.fits',
+    }),
+    ('NRCB2', 'F150W2', 'F164N') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0087.fits',
+    }),
+    ('NRCB2', 'F182M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0130.fits',
+    }),
+    ('NRCB2', 'F187N', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0101.fits',
+    }),
+    ('NRCB2', 'F200W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0075.fits',
+    }),
+    ('NRCB2', 'F210M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0094.fits',
+    }),
+    ('NRCB2', 'F212N', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0111.fits',
+    }),
+    ('NRCB3', 'ANY', 'ANY') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_flat_0008.fits',
+    }),
+    ('NRCB3', 'F115W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0098.fits',
+    }),
+    ('NRCB3', 'F140M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0097.fits',
+    }),
+    ('NRCB3', 'F150W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0110.fits',
+    }),
+    ('NRCB3', 'F150W2', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0046.fits',
+    }),
+    ('NRCB3', 'F150W2', 'F162M') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0109.fits',
+    }),
+    ('NRCB3', 'F150W2', 'F164N') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0103.fits',
+    }),
+    ('NRCB3', 'F182M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0114.fits',
+    }),
+    ('NRCB3', 'F187N', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0029.fits',
+    }),
+    ('NRCB3', 'F200W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0026.fits',
+    }),
+    ('NRCB3', 'F210M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0050.fits',
+    }),
+    ('NRCB3', 'F212N', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0061.fits',
+    }),
+    ('NRCB4', 'ANY', 'ANY') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_flat_0009.fits',
+    }),
+    ('NRCB4', 'F115W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0108.fits',
+    }),
+    ('NRCB4', 'F140M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0040.fits',
+    }),
+    ('NRCB4', 'F150W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0034.fits',
+    }),
+    ('NRCB4', 'F150W2', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0092.fits',
+    }),
+    ('NRCB4', 'F150W2', 'F162M') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0102.fits',
+    }),
+    ('NRCB4', 'F150W2', 'F164N') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0066.fits',
+    }),
+    ('NRCB4', 'F182M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0048.fits',
+    }),
+    ('NRCB4', 'F187N', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0038.fits',
+    }),
+    ('NRCB4', 'F200W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0100.fits',
+    }),
+    ('NRCB4', 'F210M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0052.fits',
+    }),
+    ('NRCB4', 'F212N', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0133.fits',
+    }),
+    ('NRCBLONG', 'ANY', 'ANY') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_flat_0010.fits',
+    }),
+    ('NRCBLONG', 'F250M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0035.fits',
+    }),
+    ('NRCBLONG', 'F277W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0069.fits',
+    }),
+    ('NRCBLONG', 'F300M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0085.fits',
+    }),
+    ('NRCBLONG', 'F322W2', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0057.fits',
+    }),
+    ('NRCBLONG', 'F322W2', 'F323N') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0064.fits',
+    }),
+    ('NRCBLONG', 'F335M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0095.fits',
+    }),
+    ('NRCBLONG', 'F356W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0123.fits',
+    }),
+    ('NRCBLONG', 'F360M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0027.fits',
+    }),
+    ('NRCBLONG', 'F410M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0037.fits',
+    }),
+    ('NRCBLONG', 'F430M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0045.fits',
+    }),
+    ('NRCBLONG', 'F444W', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0104.fits',
+    }),
+    ('NRCBLONG', 'F444W', 'F405N') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0117.fits',
+    }),
+    ('NRCBLONG', 'F444W', 'F466N') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0074.fits',
+    }),
+    ('NRCBLONG', 'F444W', 'F470N') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0051.fits',
+    }),
+    ('NRCBLONG', 'F460M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0073.fits',
+    }),
+    ('NRCBLONG', 'F480M', 'CLEAR') : UseAfter({
+        '2014-06-01 00:00:00' : 'jwst_nircam_flat_0116.fits',
+    }),
+})

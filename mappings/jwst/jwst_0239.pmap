@@ -1,0 +1,18 @@
+header = {
+    'derived_from' : 'jwst_0238.pmap',
+    'description' : 'Hand edited to add FGS, MIRI, NIRISS, NIRCAM types ifufore, ifupost, ifuslicer as N/A',
+    'mapping' : 'PIPELINE',
+    'name' : 'jwst_0239.pmap',
+    'observatory' : 'JWST',
+    'parkey' : ('META.INSTRUMENT.NAME',),
+    'sha1sum' : 'a69cd0c16dbd94e93c1174b6a67560f45cd11727',
+}
+
+selector = {
+    'FGS' : 'jwst_fgs_0047.imap',
+    'MIRI' : 'jwst_miri_0100.imap',
+    'NIRCAM' : 'jwst_nircam_0050.imap',
+    'NIRISS' : 'jwst_niriss_0063.imap',
+    'NIRSPEC' : 'jwst_nirspec_0090.imap',
+    'SYSTEM' : 'jwst_system_0006.imap',
+}

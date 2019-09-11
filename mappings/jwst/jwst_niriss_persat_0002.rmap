@@ -1,0 +1,18 @@
+header = {
+    'derived_from' : 'jwst_niriss_persat_0001.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'persat',
+    'filetype' : 'PERSAT',
+    'instrument' : 'NIRISS',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_niriss_persat_0002.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR',),),
+    'sha1sum' : '7cb0be4d845f7272f69e78b97c1f7c6b21864b82',
+    'suffix' : 'persat',
+    'text_descr' : 'Persistence Saturation Threshold',
+}
+
+selector = Match({
+    'NIS' : 'jwst_niriss_persat_0001.fits',
+})

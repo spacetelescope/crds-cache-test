@@ -1,0 +1,28 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_fgs_distortion_0003.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'DISTORTION',
+    'filetype' : 'DISTORTION',
+    'instrument' : 'FGS',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_fgs_distortion_0004.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.EXPOSURE.TYPE', 'META.INSTRUMENT.DETECTOR'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'reference_to_dataset' : {
+        'DETECTOR' : 'META.INSTRUMENT.DETECTOR',
+        'EXP_TYPE' : 'META.EXPOSURE.TYPE',
+    },
+    'sha1sum' : '868cfa2c05141a112109715d8fb96140ac8b2537',
+    'suffix' : 'distortion',
+    'text_descr' : 'Distortion',
+}
+
+selector = Match({
+    ('FGS_IMAGE|FGS_FOCUS', 'GUIDER1') : UseAfter({
+        '2016-01-01 00:00:00' : 'jwst_fgs_distortion_0001.asdf',
+    }),
+    ('FGS_IMAGE|FGS_FOCUS', 'GUIDER2') : UseAfter({
+        '2016-01-01 00:00:00' : 'jwst_fgs_distortion_0002.asdf',
+    }),
+})

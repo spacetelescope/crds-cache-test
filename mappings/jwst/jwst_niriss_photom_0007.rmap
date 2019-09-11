@@ -1,0 +1,17 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_niriss_photom_0006.rmap',
+    'filekind' : 'PHOTOM',
+    'instrument' : 'NIRISS',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_niriss_photom_0007.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR',), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '0c8f8e4601fb49796ab2e03b7cee4e1c0d9f9d7d',
+}
+
+selector = Match({
+    'NIS' : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_niriss_photom_0017.fits',
+    }),
+})

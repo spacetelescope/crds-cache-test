@@ -1,0 +1,14 @@
+header = {
+    'derived_from' : 'jwst_system_0015.imap',
+    'instrument' : 'SYSTEM',
+    'mapping' : 'INSTRUMENT',
+    'name' : 'jwst_system_0016.imap',
+    'observatory' : 'JWST',
+    'parkey' : ('REFTYPE',),
+    'sha1sum' : '1dc896f496542ee69fb35b2522cba343084794cb',
+}
+
+selector = {
+    'CALVER' : 'jwst_system_calver_0017.rmap',
+    'DATALVL' : 'jwst_system_datalvl_0002.rmap',
+}

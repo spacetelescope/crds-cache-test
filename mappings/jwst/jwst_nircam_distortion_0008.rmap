@@ -1,0 +1,63 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nircam_distortion_0007.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'DISTORTION',
+    'filetype' : 'DISTORTION',
+    'instrument' : 'NIRCAM',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nircam_distortion_0008.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.EXPOSURE.TYPE', 'META.INSTRUMENT.DETECTOR', 'META.INSTRUMENT.CHANNEL'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'reference_to_dataset' : {
+        'CHANNEL' : 'META.INSTRUMENT.CHANNEL',
+        'DETECTOR' : 'META.INSTRUMENT.DETECTOR',
+        'EXP_TYPE' : 'META.EXPOSURE.TYPE',
+    },
+    'sha1sum' : 'b26d43ffdb1ea07ef7c91942381e654c7df44a91',
+    'suffix' : 'distortion',
+    'text_descr' : 'Distortion',
+}
+
+selector = Match({
+    ('N/A', 'NRCA1', 'SHORT') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0001.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0019.asdf',
+    }),
+    ('N/A', 'NRCA2', 'SHORT') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0002.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0014.asdf',
+    }),
+    ('N/A', 'NRCA3', 'SHORT') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0003.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0012.asdf',
+    }),
+    ('N/A', 'NRCA4', 'SHORT') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0004.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0020.asdf',
+    }),
+    ('N/A', 'NRCALONG', 'LONG') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0005.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0017.asdf',
+    }),
+    ('N/A', 'NRCB1', 'SHORT') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0010.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0011.asdf',
+    }),
+    ('N/A', 'NRCB2', 'SHORT') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0009.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0015.asdf',
+    }),
+    ('N/A', 'NRCB3', 'SHORT') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0008.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0016.asdf',
+    }),
+    ('N/A', 'NRCB4', 'SHORT') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0007.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0018.asdf',
+    }),
+    ('N/A', 'NRCBLONG', 'LONG') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0006.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0013.asdf',
+    }),
+})

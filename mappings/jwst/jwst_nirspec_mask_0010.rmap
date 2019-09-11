@@ -1,0 +1,29 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nirspec_mask_0009.rmap',
+    'filekind' : 'MASK',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_mask_0010.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.SUBARRAY.NAME'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '56053a9e2e7dd9933d9328fa3ec9095dbcadc83a',
+    'substitutions' : {
+        'META.SUBARRAY.NAME' : {
+            'GENERIC' : 'N/A',
+        },
+    },
+}
+
+selector = Match({
+    ('NRS1', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nirspec_mask_0004.fits',
+        '1999-01-01 00:00:00' : 'jwst_nirspec_mask_0002.fits',
+        '2000-01-01 00:00:00' : 'jwst_nirspec_mask_0008.fits',
+    }),
+    ('NRS2', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nirspec_mask_0005.fits',
+        '1999-01-01 00:00:00' : 'jwst_nirspec_mask_0003.fits',
+        '2000-01-01 00:00:00' : 'jwst_nirspec_mask_0009.fits',
+    }),
+})

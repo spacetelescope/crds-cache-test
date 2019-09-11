@@ -1,0 +1,18 @@
+header = {
+    'derived_from' : 'jwst_niriss_trappars_0001.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'trappars',
+    'filetype' : 'TRAPPARS',
+    'instrument' : 'NIRISS',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_niriss_trappars_0002.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR',),),
+    'sha1sum' : '34db4ed6c2067cdd5b129c8641a7073e79f246f7',
+    'suffix' : 'trappars',
+    'text_descr' : 'Trap Capture and Decay Parameters',
+}
+
+selector = Match({
+    'NIS' : 'jwst_niriss_trappars_0001.fits',
+})

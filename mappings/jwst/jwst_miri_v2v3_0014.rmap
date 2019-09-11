@@ -1,0 +1,56 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_miri_v2v3_0013.rmap',
+    'file_ext' : '.asdf',
+    'filekind' : 'v2v3',
+    'filetype' : 'V2V3',
+    'instrument' : 'MIRI',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_miri_v2v3_0014.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.EXPOSURE.TYPE', 'META.INSTRUMENT.CHANNEL', 'META.INSTRUMENT.BAND'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'reference_to_dataset' : {
+        'BAND' : 'META.INSTRUMENT.BAND',
+        'CHANNEL' : 'META.INSTRUMENT.CHANNEL',
+        'DETECTOR' : 'META.INSTRUMENT.DETECTOR',
+        'EXP_TYPE' : 'META.EXPOSURE.TYPE',
+    },
+    'sha1sum' : '20373651dd0b1b031612a177bd86b5c7bcac6db3',
+    'suffix' : 'v2v3',
+    'text_descr' : 'MIRI v2-v3 map',
+}
+
+selector = Match({
+    ('ANY', 'MIR_4QPM', 'ANY', 'ANY') : 'N/A',
+    ('ANY', 'MIR_CORONCAL', 'ANY', 'ANY') : 'N/A',
+    ('ANY', 'MIR_FLATIMAGE|MIR_FLAT-IMAGE|MIR_FLATMRS|MIR_FLAT-MRS', 'ANY', 'ANY') : 'N/A',
+    ('ANY', 'MIR_IMAGE', 'ANY', 'ANY') : 'N/A',
+    ('ANY', 'MIR_LRS-FIXEDSLIT', 'ANY', 'ANY') : 'N/A',
+    ('ANY', 'MIR_LRS-SLITLESS', 'ANY', 'ANY') : 'N/A',
+    ('ANY', 'MIR_LYOT', 'ANY', 'ANY') : 'N/A',
+    ('ANY', 'MIR_TACQ', 'ANY', 'ANY') : 'N/A',
+    ('MIRIFULONG', 'MIR_MRS', '34', 'LONG') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_v2v3_0004.asdf',
+        '2000-01-01 00:00:00' : 'jwst_miri_v2v3_0010.asdf',
+    }),
+    ('MIRIFULONG', 'MIR_MRS', '34', 'MEDIUM') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_v2v3_0005.asdf',
+        '2000-01-01 00:00:00' : 'jwst_miri_v2v3_0011.asdf',
+    }),
+    ('MIRIFULONG', 'MIR_MRS', '34', 'SHORT') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_v2v3_0006.asdf',
+        '2000-01-01 00:00:00' : 'jwst_miri_v2v3_0012.asdf',
+    }),
+    ('MIRIFUSHORT', 'MIR_MRS', '12', 'LONG') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_v2v3_0001.asdf',
+        '2000-01-01 00:00:00' : 'jwst_miri_v2v3_0007.asdf',
+    }),
+    ('MIRIFUSHORT', 'MIR_MRS', '12', 'MEDIUM') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_v2v3_0002.asdf',
+        '2000-01-01 00:00:00' : 'jwst_miri_v2v3_0008.asdf',
+    }),
+    ('MIRIFUSHORT', 'MIR_MRS', '12', 'SHORT') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_v2v3_0003.asdf',
+        '2000-01-01 00:00:00' : 'jwst_miri_v2v3_0009.asdf',
+    }),
+})

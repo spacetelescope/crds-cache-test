@@ -1,0 +1,72 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nirspec_superbias_0009.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'superbias',
+    'filetype' : 'SUPERBIAS',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_superbias_0010.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.EXPOSURE.READPATT', 'META.SUBARRAY.NAME'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '317817203e3dfceee647a96f0a75c2d15e50a0cb',
+    'substitutions' : {
+        'META.SUBARRAY.NAME' : {
+            'GENERIC' : 'N/A',
+        },
+    },
+    'suffix' : 'sbias',
+    'text_descr' : 'Super Bias',
+}
+
+selector = Match({
+    ('NRS1', 'ANY', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nirspec_superbias_0002.fits',
+    }),
+    ('NRS1', 'NRSIRS2RAPID|NRSIRS2', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nirspec_superbias_0045.fits',
+        '2015-11-01 00:00:00' : 'jwst_nirspec_superbias_0047.fits',
+        '2016-01-15 00:00:00' : 'jwst_nirspec_superbias_0046.fits',
+    }),
+    ('NRS1', 'NRSRAPID', 'ALLSLITS') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_nirspec_superbias_0032.fits',
+    }),
+    ('NRS1', 'NRSRAPID', 'FULL') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nirspec_superbias_0026.fits',
+        '2010-06-01 00:00:00' : 'jwst_nirspec_superbias_0027.fits',
+        '2013-01-01 00:00:00' : 'jwst_nirspec_superbias_0028.fits',
+        '2013-07-01 00:00:00' : 'jwst_nirspec_superbias_0029.fits',
+        '2014-07-01 00:00:00' : 'jwst_nirspec_superbias_0030.fits',
+    }),
+    ('NRS1', 'NRSRAPID', 'S1600A1') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_nirspec_superbias_0033.fits',
+    }),
+    ('NRS1', 'NRSRAPID', 'STRIPE') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_nirspec_superbias_0031.fits',
+    }),
+    ('NRS2', 'ANY', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nirspec_superbias_0003.fits',
+    }),
+    ('NRS2', 'NRSIRS2RAPID|NRSIRS2', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nirspec_superbias_0043.fits',
+        '2015-11-01 00:00:00' : 'jwst_nirspec_superbias_0042.fits',
+        '2016-01-15 00:00:00' : 'jwst_nirspec_superbias_0044.fits',
+        '2016-01-19 12:00:00' : 'jwst_nirspec_superbias_0048.fits',
+    }),
+    ('NRS2', 'NRSRAPID', 'ALLSLITS') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_nirspec_superbias_0040.fits',
+    }),
+    ('NRS2', 'NRSRAPID', 'FULL') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nirspec_superbias_0034.fits',
+        '2010-06-01 00:00:00' : 'jwst_nirspec_superbias_0035.fits',
+        '2013-01-01 00:00:00' : 'jwst_nirspec_superbias_0036.fits',
+        '2013-07-01 00:00:00' : 'jwst_nirspec_superbias_0037.fits',
+        '2014-07-01 00:00:00' : 'jwst_nirspec_superbias_0038.fits',
+    }),
+    ('NRS2', 'NRSRAPID', 'S200B1') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_nirspec_superbias_0041.fits',
+    }),
+    ('NRS2', 'NRSRAPID', 'STRIPE') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_nirspec_superbias_0039.fits',
+    }),
+})

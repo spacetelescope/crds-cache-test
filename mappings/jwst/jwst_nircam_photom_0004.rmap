@@ -1,0 +1,44 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nircam_photom_0003.rmap',
+    'filekind' : 'PHOTOM',
+    'instrument' : 'NIRCAM',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nircam_photom_0004.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR',), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '00b0f114ef1d984561263d801ddb79dc3a864cf3',
+}
+
+selector = Match({
+    'NRCA1' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_photom_0031.fits',
+    }),
+    'NRCA2' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_photom_0032.fits',
+    }),
+    'NRCA3' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_photom_0033.fits',
+    }),
+    'NRCA4' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_photom_0034.fits',
+    }),
+    'NRCALONG' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_photom_0035.fits',
+    }),
+    'NRCB1' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_photom_0036.fits',
+    }),
+    'NRCB2' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_photom_0037.fits',
+    }),
+    'NRCB3' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_photom_0038.fits',
+    }),
+    'NRCB4' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_photom_0039.fits',
+    }),
+    'NRCBLONG' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_photom_0040.fits',
+    }),
+})

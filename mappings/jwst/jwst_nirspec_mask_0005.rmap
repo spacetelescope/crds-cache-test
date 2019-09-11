@@ -1,0 +1,22 @@
+header = {
+    'derived_from' : 'jwst_nirspec_mask_0004.rmap',
+    'filekind' : 'MASK',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_mask_0005.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.SUBARRAY.NAME'),),
+    'sha1sum' : '7820487b9dd023b6cb7085b101f9a1087d64f155',
+    'substitutions' : {
+        'META.SUBARRAY.NAME' : {
+            'GENERIC' : 'N/A',
+        },
+    },
+}
+
+selector = Match({
+    ('NRS1', 'FULL') : 'jwst_nirspec_mask_0004.fits',
+    ('NRS1', 'GENERIC') : 'jwst_nirspec_mask_0002.fits',
+    ('NRS2', 'FULL') : 'jwst_nirspec_mask_0005.fits',
+    ('NRS2', 'GENERIC') : 'jwst_nirspec_mask_0003.fits',
+})

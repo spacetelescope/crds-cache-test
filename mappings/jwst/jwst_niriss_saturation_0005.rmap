@@ -1,0 +1,17 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_niriss_saturation_0004.rmap',
+    'filekind' : 'SATURATION',
+    'instrument' : 'NIRISS',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_niriss_saturation_0005.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR',), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '5106acf82bef471bec1a45a1961077ff6064d3bf',
+}
+
+selector = Match({
+    'NIS' : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_niriss_saturation_0005.fits',
+    }),
+})

@@ -1,0 +1,19 @@
+header = {
+    'derived_from' : 'jwst_fgs_trapdensity_0001.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'trapdensity',
+    'filetype' : 'TRAPDENSITY',
+    'instrument' : 'FGS',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_fgs_trapdensity_0002.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR',),),
+    'sha1sum' : 'c26790f04372303153648483de19472817902fef',
+    'suffix' : 'trapdensity',
+    'text_descr' : 'Trap Density For Persistence Step',
+}
+
+selector = Match({
+    'GUIDER1' : 'jwst_fgs_trapdensity_0001.fits',
+    'GUIDER2' : 'jwst_fgs_trapdensity_0002.fits',
+})

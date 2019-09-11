@@ -1,0 +1,21 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_system_calver_0001.rmap',
+    'file_ext' : '.json',
+    'filekind' : 'CALVER',
+    'filetype' : 'CALVER',
+    'instrument' : 'SYSTEM',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_system_calver_0002.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('CAL_VER',), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '74047659a0c18f2d8c6cdb71891c699a81af0ab0',
+    'suffix' : 'calver',
+    'text_descr' : 'Calibration Software Component Versions',
+}
+
+selector = Match({
+    '0.6.0noop.dev331' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_system_calver_0001.json',
+    }),
+})

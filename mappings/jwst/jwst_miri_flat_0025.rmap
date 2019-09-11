@@ -1,0 +1,423 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_miri_flat_0024.rmap',
+    'filekind' : 'FLAT',
+    'instrument' : 'MIRI',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_miri_flat_0025.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.INSTRUMENT.FILTER', 'META.INSTRUMENT.BAND', 'META.EXPOSURE.READPATT', 'META.SUBARRAY.NAME'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '220155d3c3e4b2348530b7a60021182fe5421033',
+    'substitutions' : {
+        'META.SUBARRAY.NAME' : {
+            'GENERIC' : 'N/A',
+        },
+    },
+}
+
+selector = Match({
+    ('MIRIFULONG', 'N/A', 'LONG', 'ANY', 'FULL') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_flat_0104.fits',
+        '2015-06-01 00:00:00' : 'jwst_miri_flat_0065.fits',
+    }),
+    ('MIRIFULONG', 'N/A', 'LONG', 'ANY', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0025.fits',
+    }),
+    ('MIRIFULONG', 'N/A', 'MEDIUM', 'ANY', 'FULL') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_flat_0105.fits',
+        '2015-06-01 00:00:00' : 'jwst_miri_flat_0066.fits',
+    }),
+    ('MIRIFULONG', 'N/A', 'MEDIUM', 'ANY', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0024.fits',
+    }),
+    ('MIRIFULONG', 'N/A', 'SHORT', 'ANY', 'FULL') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_flat_0106.fits',
+        '2015-06-01 00:00:00' : 'jwst_miri_flat_0067.fits',
+    }),
+    ('MIRIFULONG', 'N/A', 'SHORT', 'ANY', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0023.fits',
+    }),
+    ('MIRIFUSHORT', 'N/A', 'LONG', 'ANY', 'FULL') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_flat_0107.fits',
+        '2015-06-01 00:00:00' : 'jwst_miri_flat_0068.fits',
+    }),
+    ('MIRIFUSHORT', 'N/A', 'LONG', 'ANY', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0028.fits',
+    }),
+    ('MIRIFUSHORT', 'N/A', 'MEDIUM', 'ANY', 'FULL') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_flat_0108.fits',
+        '2015-06-01 00:00:00' : 'jwst_miri_flat_0069.fits',
+    }),
+    ('MIRIFUSHORT', 'N/A', 'MEDIUM', 'ANY', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0027.fits',
+    }),
+    ('MIRIFUSHORT', 'N/A', 'SHORT', 'ANY', 'FULL') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_flat_0109.fits',
+        '2015-06-01 00:00:00' : 'jwst_miri_flat_0070.fits',
+    }),
+    ('MIRIFUSHORT', 'N/A', 'SHORT', 'ANY', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0026.fits',
+    }),
+    ('MIRIMAGE', 'F1000W', 'N/A', 'ANY', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0006.fits',
+    }),
+    ('MIRIMAGE', 'F1000W', 'N/A', 'FAST', 'BRIGHTSKY') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0110.fits',
+    }),
+    ('MIRIMAGE', 'F1000W', 'N/A', 'FAST', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0071.fits',
+        '2000-01-01 00:00:00' : 'jwst_miri_flat_0111.fits',
+    }),
+    ('MIRIMAGE', 'F1000W', 'N/A', 'FAST', 'MASK1065') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0072.fits',
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0112.fits',
+    }),
+    ('MIRIMAGE', 'F1000W', 'N/A', 'FAST', 'MASK1140') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0113.fits',
+    }),
+    ('MIRIMAGE', 'F1000W', 'N/A', 'FAST', 'MASK1550') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0114.fits',
+    }),
+    ('MIRIMAGE', 'F1000W', 'N/A', 'FAST', 'MASKLYOT') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0115.fits',
+    }),
+    ('MIRIMAGE', 'F1000W', 'N/A', 'FAST', 'SUB128') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0117.fits',
+    }),
+    ('MIRIMAGE', 'F1000W', 'N/A', 'FAST', 'SUB256') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0118.fits',
+    }),
+    ('MIRIMAGE', 'F1000W', 'N/A', 'FAST', 'SUB64') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0119.fits',
+    }),
+    ('MIRIMAGE', 'F1000W', 'N/A', 'FAST', 'SUBPRISM') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0116.fits',
+    }),
+    ('MIRIMAGE', 'F1000W', 'N/A', 'SLOW', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0095.fits',
+    }),
+    ('MIRIMAGE', 'F1065C', 'N/A', 'FAST', 'FULL') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_flat_0120.fits',
+    }),
+    ('MIRIMAGE', 'F1065C', 'N/A', 'FAST', 'MASK1065') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0121.fits',
+    }),
+    ('MIRIMAGE', 'F1130W', 'N/A', 'FAST', 'BRIGHTSKY') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0122.fits',
+    }),
+    ('MIRIMAGE', 'F1130W', 'N/A', 'FAST', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0074.fits',
+        '2000-01-01 00:00:00' : 'jwst_miri_flat_0123.fits',
+    }),
+    ('MIRIMAGE', 'F1130W', 'N/A', 'FAST', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0007.fits',
+    }),
+    ('MIRIMAGE', 'F1130W', 'N/A', 'FAST', 'MASK1140') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0075.fits',
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0124.fits',
+    }),
+    ('MIRIMAGE', 'F1130W', 'N/A', 'FAST', 'SUB128') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0126.fits',
+    }),
+    ('MIRIMAGE', 'F1130W', 'N/A', 'FAST', 'SUB256') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0127.fits',
+    }),
+    ('MIRIMAGE', 'F1130W', 'N/A', 'FAST', 'SUB64') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0128.fits',
+    }),
+    ('MIRIMAGE', 'F1130W', 'N/A', 'FAST', 'SUBPRISM') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0125.fits',
+    }),
+    ('MIRIMAGE', 'F1130W', 'N/A', 'SLOW', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0096.fits',
+    }),
+    ('MIRIMAGE', 'F1130W', 'N/A', 'SLOW', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0008.fits',
+    }),
+    ('MIRIMAGE', 'F1140C', 'N/A', 'FAST', 'FULL') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_flat_0129.fits',
+    }),
+    ('MIRIMAGE', 'F1140C', 'N/A', 'FAST', 'MASK1140') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0130.fits',
+    }),
+    ('MIRIMAGE', 'F1280W', 'N/A', 'ANY', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0009.fits',
+    }),
+    ('MIRIMAGE', 'F1280W', 'N/A', 'FAST', 'BRIGHTSKY') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0131.fits',
+    }),
+    ('MIRIMAGE', 'F1280W', 'N/A', 'FAST', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0077.fits',
+        '2000-01-01 00:00:00' : 'jwst_miri_flat_0132.fits',
+    }),
+    ('MIRIMAGE', 'F1280W', 'N/A', 'FAST', 'SUB128') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0134.fits',
+    }),
+    ('MIRIMAGE', 'F1280W', 'N/A', 'FAST', 'SUB256') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0135.fits',
+    }),
+    ('MIRIMAGE', 'F1280W', 'N/A', 'FAST', 'SUB64') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0136.fits',
+    }),
+    ('MIRIMAGE', 'F1280W', 'N/A', 'FAST', 'SUBPRISM') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0133.fits',
+    }),
+    ('MIRIMAGE', 'F1280W', 'N/A', 'SLOW', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0097.fits',
+    }),
+    ('MIRIMAGE', 'F1500W', 'N/A', 'ANY', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0010.fits',
+    }),
+    ('MIRIMAGE', 'F1500W', 'N/A', 'FAST', 'BRIGHTSKY') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0137.fits',
+    }),
+    ('MIRIMAGE', 'F1500W', 'N/A', 'FAST', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0079.fits',
+        '2000-01-01 00:00:00' : 'jwst_miri_flat_0138.fits',
+    }),
+    ('MIRIMAGE', 'F1500W', 'N/A', 'FAST', 'MASK1065') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0139.fits',
+    }),
+    ('MIRIMAGE', 'F1500W', 'N/A', 'FAST', 'MASK1140') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0140.fits',
+    }),
+    ('MIRIMAGE', 'F1500W', 'N/A', 'FAST', 'MASK1550') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0080.fits',
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0141.fits',
+    }),
+    ('MIRIMAGE', 'F1500W', 'N/A', 'FAST', 'MASKLYOT') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0142.fits',
+    }),
+    ('MIRIMAGE', 'F1500W', 'N/A', 'FAST', 'SUB128') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0144.fits',
+    }),
+    ('MIRIMAGE', 'F1500W', 'N/A', 'FAST', 'SUB256') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0145.fits',
+    }),
+    ('MIRIMAGE', 'F1500W', 'N/A', 'FAST', 'SUB64') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0146.fits',
+    }),
+    ('MIRIMAGE', 'F1500W', 'N/A', 'FAST', 'SUBPRISM') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0143.fits',
+    }),
+    ('MIRIMAGE', 'F1500W', 'N/A', 'SLOW', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0098.fits',
+    }),
+    ('MIRIMAGE', 'F1550C', 'N/A', 'FAST', 'FULL') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_flat_0147.fits',
+    }),
+    ('MIRIMAGE', 'F1550C', 'N/A', 'FAST', 'MASK1550') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0148.fits',
+    }),
+    ('MIRIMAGE', 'F1800W', 'N/A', 'ANY', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0011.fits',
+    }),
+    ('MIRIMAGE', 'F1800W', 'N/A', 'FAST', 'BRIGHTSKY') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0149.fits',
+    }),
+    ('MIRIMAGE', 'F1800W', 'N/A', 'FAST', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0081.fits',
+        '2000-01-01 00:00:00' : 'jwst_miri_flat_0150.fits',
+    }),
+    ('MIRIMAGE', 'F1800W', 'N/A', 'FAST', 'SUB128') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0152.fits',
+    }),
+    ('MIRIMAGE', 'F1800W', 'N/A', 'FAST', 'SUB256') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0153.fits',
+    }),
+    ('MIRIMAGE', 'F1800W', 'N/A', 'FAST', 'SUB64') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0154.fits',
+    }),
+    ('MIRIMAGE', 'F1800W', 'N/A', 'FAST', 'SUBPRISM') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0151.fits',
+    }),
+    ('MIRIMAGE', 'F1800W', 'N/A', 'SLOW', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0099.fits',
+    }),
+    ('MIRIMAGE', 'F2100W', 'N/A', 'ANY', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0012.fits',
+    }),
+    ('MIRIMAGE', 'F2100W', 'N/A', 'FAST', 'BRIGHTSKY') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0155.fits',
+    }),
+    ('MIRIMAGE', 'F2100W', 'N/A', 'FAST', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0082.fits',
+        '2000-01-01 00:00:00' : 'jwst_miri_flat_0156.fits',
+    }),
+    ('MIRIMAGE', 'F2100W', 'N/A', 'FAST', 'MASKLYOT') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0083.fits',
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0157.fits',
+    }),
+    ('MIRIMAGE', 'F2100W', 'N/A', 'FAST', 'SUB128') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0159.fits',
+    }),
+    ('MIRIMAGE', 'F2100W', 'N/A', 'FAST', 'SUB256') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0160.fits',
+    }),
+    ('MIRIMAGE', 'F2100W', 'N/A', 'FAST', 'SUB64') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0161.fits',
+    }),
+    ('MIRIMAGE', 'F2100W', 'N/A', 'FAST', 'SUBPRISM') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0158.fits',
+    }),
+    ('MIRIMAGE', 'F2100W', 'N/A', 'SLOW', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0100.fits',
+    }),
+    ('MIRIMAGE', 'F2300C', 'N/A', 'FAST', 'FULL') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_flat_0162.fits',
+    }),
+    ('MIRIMAGE', 'F2300C', 'N/A', 'FAST', 'MASKLYOT') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0163.fits',
+    }),
+    ('MIRIMAGE', 'F2550W', 'N/A', 'ANY', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0013.fits',
+    }),
+    ('MIRIMAGE', 'F2550W', 'N/A', 'FAST', 'BRIGHTSKY') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0170.fits',
+    }),
+    ('MIRIMAGE', 'F2550W', 'N/A', 'FAST', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0084.fits',
+        '2000-01-01 00:00:00' : 'jwst_miri_flat_0171.fits',
+    }),
+    ('MIRIMAGE', 'F2550W', 'N/A', 'FAST', 'SUB128') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0173.fits',
+    }),
+    ('MIRIMAGE', 'F2550W', 'N/A', 'FAST', 'SUB256') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0174.fits',
+    }),
+    ('MIRIMAGE', 'F2550W', 'N/A', 'FAST', 'SUB64') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0175.fits',
+    }),
+    ('MIRIMAGE', 'F2550W', 'N/A', 'FAST', 'SUBPRISM') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0172.fits',
+    }),
+    ('MIRIMAGE', 'F2550W', 'N/A', 'SLOW', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0101.fits',
+    }),
+    ('MIRIMAGE', 'F2550WR', 'N/A', 'FAST', 'BRIGHTSKY') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0164.fits',
+    }),
+    ('MIRIMAGE', 'F2550WR', 'N/A', 'FAST', 'FULL') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_flat_0165.fits',
+    }),
+    ('MIRIMAGE', 'F2550WR', 'N/A', 'FAST', 'SUB128') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0167.fits',
+    }),
+    ('MIRIMAGE', 'F2550WR', 'N/A', 'FAST', 'SUB256') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0168.fits',
+    }),
+    ('MIRIMAGE', 'F2550WR', 'N/A', 'FAST', 'SUB64') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0169.fits',
+    }),
+    ('MIRIMAGE', 'F2550WR', 'N/A', 'FAST', 'SUBPRISM') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0166.fits',
+    }),
+    ('MIRIMAGE', 'F560W', 'N/A', 'ANY', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0014.fits',
+    }),
+    ('MIRIMAGE', 'F560W', 'N/A', 'FAST', 'BRIGHTSKY') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0176.fits',
+    }),
+    ('MIRIMAGE', 'F560W', 'N/A', 'FAST', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0085.fits',
+        '2000-01-01 00:00:00' : 'jwst_miri_flat_0177.fits',
+    }),
+    ('MIRIMAGE', 'F560W', 'N/A', 'FAST', 'MASK1065') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0178.fits',
+    }),
+    ('MIRIMAGE', 'F560W', 'N/A', 'FAST', 'MASK1140') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0179.fits',
+    }),
+    ('MIRIMAGE', 'F560W', 'N/A', 'FAST', 'MASK1550') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0180.fits',
+    }),
+    ('MIRIMAGE', 'F560W', 'N/A', 'FAST', 'MASKLYOT') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0181.fits',
+    }),
+    ('MIRIMAGE', 'F560W', 'N/A', 'FAST', 'SUB128') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0183.fits',
+    }),
+    ('MIRIMAGE', 'F560W', 'N/A', 'FAST', 'SUB256') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0184.fits',
+    }),
+    ('MIRIMAGE', 'F560W', 'N/A', 'FAST', 'SUB64') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0185.fits',
+    }),
+    ('MIRIMAGE', 'F560W', 'N/A', 'FAST', 'SUBPRISM') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0182.fits',
+    }),
+    ('MIRIMAGE', 'F560W', 'N/A', 'SLOW', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0102.fits',
+    }),
+    ('MIRIMAGE', 'F770W', 'N/A', 'ANY', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0015.fits',
+    }),
+    ('MIRIMAGE', 'F770W', 'N/A', 'FAST', 'BRIGHTSKY') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0087.fits',
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0186.fits',
+    }),
+    ('MIRIMAGE', 'F770W', 'N/A', 'FAST', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0088.fits',
+        '2000-01-01 00:00:00' : 'jwst_miri_flat_0187.fits',
+    }),
+    ('MIRIMAGE', 'F770W', 'N/A', 'FAST', 'SUB128') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0090.fits',
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0189.fits',
+    }),
+    ('MIRIMAGE', 'F770W', 'N/A', 'FAST', 'SUB256') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0091.fits',
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0190.fits',
+    }),
+    ('MIRIMAGE', 'F770W', 'N/A', 'FAST', 'SUB64') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0092.fits',
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0191.fits',
+    }),
+    ('MIRIMAGE', 'F770W', 'N/A', 'FAST', 'SUBPRISM') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0188.fits',
+    }),
+    ('MIRIMAGE', 'F770W', 'N/A', 'SLOW', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0103.fits',
+    }),
+    ('MIRIMAGE', 'FND', 'N/A', 'FAST', 'BRIGHTSKY') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0193.fits',
+    }),
+    ('MIRIMAGE', 'FND', 'N/A', 'FAST', 'FULL') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_flat_0194.fits',
+    }),
+    ('MIRIMAGE', 'FND', 'N/A', 'FAST', 'MASK1065') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0195.fits',
+    }),
+    ('MIRIMAGE', 'FND', 'N/A', 'FAST', 'MASK1140') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0196.fits',
+    }),
+    ('MIRIMAGE', 'FND', 'N/A', 'FAST', 'MASK1550') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0197.fits',
+    }),
+    ('MIRIMAGE', 'FND', 'N/A', 'FAST', 'MASKLYOT') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0198.fits',
+    }),
+    ('MIRIMAGE', 'FND', 'N/A', 'FAST', 'SUB128') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0200.fits',
+    }),
+    ('MIRIMAGE', 'FND', 'N/A', 'FAST', 'SUB256') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0201.fits',
+    }),
+    ('MIRIMAGE', 'FND', 'N/A', 'FAST', 'SUB64') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0202.fits',
+    }),
+    ('MIRIMAGE', 'FND', 'N/A', 'FAST', 'SUBPRISM') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0199.fits',
+    }),
+    ('MIRIMAGE', 'N/A', 'N/A', 'FAST', 'FULL') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_flat_0192.fits',
+    }),
+    ('MIRIMAGE', 'P750L', 'N/A', 'ANY', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0093.fits',
+    }),
+    ('MIRIMAGE', 'P750L', 'N/A', 'ANY', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_flat_0055.fits',
+    }),
+    ('MIRIMAGE', 'P750L', 'N/A', 'ANY', 'SUBPRISM') : UseAfter({
+        '2013-09-26 05:00:00' : 'jwst_miri_flat_0094.fits',
+    }),
+})

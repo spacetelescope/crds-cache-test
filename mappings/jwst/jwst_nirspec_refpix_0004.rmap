@@ -1,0 +1,23 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nirspec_refpix_0003.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'refpix',
+    'filetype' : 'REFPIX',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_refpix_0004.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.EXPOSURE.READPATT'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '6921fa4c263f5f9d4982b22aa788930c69bb79e9',
+    'substitutions' : {
+        'META.EXPOSURE.READPATT' : {
+            'ALLIRS2' : 'NRSIRS2|NRSIRS2RAPID',
+        },
+    },
+    'suffix' : 'refpix',
+    'text_descr' : 'Reference Pixels',
+}
+
+selector = Match({
+})

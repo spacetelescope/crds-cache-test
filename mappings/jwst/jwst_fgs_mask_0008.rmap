@@ -1,0 +1,31 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_fgs_mask_0006.rmap',
+    'filekind' : 'MASK',
+    'instrument' : 'FGS',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_fgs_mask_0008.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.SUBARRAY.NAME'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '2023505aeee1fde850c80b00da15e90be17c9f50',
+    'substitutions' : {
+        'META.SUBARRAY.NAME' : {
+            'GENERIC' : 'N/A',
+        },
+    },
+}
+
+selector = Match({
+    ('GUIDER1', 'FULL') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_fgs_mask_0008.fits',
+    }),
+    ('GUIDER1', 'GENERIC') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_fgs_mask_0004.fits',
+    }),
+    ('GUIDER2', 'FULL') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_fgs_mask_0009.fits',
+    }),
+    ('GUIDER2', 'GENERIC') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_fgs_mask_0005.fits',
+    }),
+})
