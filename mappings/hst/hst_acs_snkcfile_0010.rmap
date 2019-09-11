@@ -1,0 +1,23 @@
+header = {
+    'derived_from' : 'hst_acs_snkcfile_0009.rmap',
+    'filekind' : 'SNKCFILE',
+    'filetype' : 'SINK PIXELS',
+    'instrument' : 'ACS',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_acs_snkcfile_0010.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('DETECTOR',), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'IMAGE',
+    'reffile_required' : 'YES',
+    'reffile_switch' : 'SINKCORR',
+    'rmap_relevance' : '((SINKCORR != "OMIT") and (DETECTOR == "WFC"))',
+    'sha1sum' : '90bb849277596361df5d8455133dce3ff75fea7b',
+    'suffix' : 'snk',
+    'text_descr' : 'Sink Pixel Flagging Image',
+}
+
+selector = Match({
+    'WFC' : UseAfter({
+        '2018-01-12 00:23:06' : '23t1546sj_snk.fits',
+    }),
+})

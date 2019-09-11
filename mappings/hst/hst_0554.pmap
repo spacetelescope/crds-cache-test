@@ -1,0 +1,17 @@
+header = {
+    'derived_from' : 'hst_0553.pmap',
+    'mapping' : 'PIPELINE',
+    'name' : 'hst_0554.pmap',
+    'observatory' : 'HST',
+    'parkey' : ('INSTRUME',),
+    'sha1sum' : 'cabe3ce2e0b3f27eddaab5b34a3fa066be5d11da',
+}
+
+selector = {
+    'ACS' : 'hst_acs_0339.imap',
+    'COS' : 'hst_cos_0290.imap',
+    'NICMOS' : 'hst_nicmos_0250.imap',
+    'STIS' : 'hst_stis_0288.imap',
+    'WFC3' : 'hst_wfc3_0386.imap',
+    'WFPC2' : 'hst_wfpc2_0250.imap',
+}

@@ -1,0 +1,20 @@
+header = {
+    'derived_from' : 'hst_acs_snkcfile.rmap',
+    'filekind' : 'SNKCFILE',
+    'filetype' : 'SINK PIXELS',
+    'instrument' : 'ACS',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_acs_snkcfile_0001.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('DETECTOR',), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'IMAGE',
+    'reffile_required' : 'YES',
+    'reffile_switch' : 'SINKCORR',
+    'rmap_relevance' : '(SINKCORR != "OMIT")',
+    'sha1sum' : '503a5d91892795811d2941d2d8250db3f81ba0cd',
+    'suffix' : 'snk',
+    'text_descr' : 'Sink Pixel Flagging Image',
+}
+
+selector = Match({
+})
