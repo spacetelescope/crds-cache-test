@@ -1,0 +1,25 @@
+header = {
+    'derived_from' : 'hst_cos_bpixtab_0254.rmap',
+    'filekind' : 'BPIXTAB',
+    'instrument' : 'COS',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_cos_bpixtab_0255.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('DETECTOR',), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'TABLE',
+    'reffile_required' : 'NONE',
+    'reffile_switch' : 'NONE',
+    'rmap_relevance' : 'ALWAYS',
+    'sha1sum' : 'b7ec5ccca5c8c4c9fe784225c303c56a3745a6c1',
+}
+
+selector = Match({
+    ('FUV',) : UseAfter({
+        '1996-10-01 00:00:00' : 's7g1700dl_bpix.fits',
+        '2009-05-11 00:00:00' : '36d1836ml_bpix.fits',
+    }),
+    ('NUV',) : UseAfter({
+        '1996-10-01 00:00:00' : 's7g1700pl_bpix.fits',
+        '2009-05-11 00:00:00' : 'uas19356l_bpix.fits',
+    }),
+})

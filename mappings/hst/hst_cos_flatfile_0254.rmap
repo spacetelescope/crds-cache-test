@@ -1,0 +1,42 @@
+header = {
+    'derived_from' : 'hst_cos_flatfile_0253.rmap',
+    'filekind' : 'FLATFILE',
+    'instrument' : 'COS',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_cos_flatfile_0254.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('DETECTOR', 'OPT_ELEM', 'LIFE_ADJ'), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'IMAGE',
+    'reffile_required' : 'NO',
+    'reffile_switch' : 'FLATCORR',
+    'rmap_relevance' : '(FLATCORR != "OMIT")',
+    'sha1sum' : '875faf29c5848203a1a8b97d7b28d59dc3326013',
+}
+
+selector = Match({
+    ('FUV', 'G130M', '3.0') : UseAfter({
+        '1996-10-01 00:00:00' : 'z6n16116l_flat.fits',
+    }),
+    ('FUV', 'G130M', '4.0') : UseAfter({
+        '1996-10-01 00:00:00' : '19m1548dl_flat.fits',
+    }),
+    ('FUV', 'G140L', '3.0') : UseAfter({
+        '1996-10-01 00:00:00' : 'z6n16117l_flat.fits',
+    }),
+    ('FUV', 'G140L', '4.0') : UseAfter({
+        '1996-10-01 00:00:00' : '19m1548jl_flat.fits',
+    }),
+    ('FUV', 'G160M', '3.0') : UseAfter({
+        '1996-10-01 00:00:00' : 'z6n16118l_flat.fits',
+    }),
+    ('FUV', 'G160M', '4.0') : UseAfter({
+        '1996-10-01 00:00:00' : '19m1548ql_flat.fits',
+    }),
+    ('FUV', 'N/A', 'N/A') : UseAfter({
+        '1996-10-01 00:00:00' : 'xab1551cl_flat.fits',
+    }),
+    ('NUV', 'N/A', 'N/A') : UseAfter({
+        '1996-10-01 00:00:00' : 's7g1700tl_flat.fits',
+        '2009-05-11 00:00:00' : 'x5v1944hl_flat.fits',
+    }),
+})

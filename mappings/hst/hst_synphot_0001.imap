@@ -1,0 +1,12 @@
+header = {
+    'derived_from' : 'Hand made 2019-03-18',
+    'instrument' : 'SYNPHOT',
+    'mapping' : 'INSTRUMENT',
+    'name' : 'hst_synphot_0001.imap',
+    'observatory' : 'HST',
+    'parkey' : ('REFTYPE',),
+    'sha1sum' : 'a8585bed9f60e0e71227f8352e5d068a71fabf1b',
+}
+
+selector = {
+}

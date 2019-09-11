@@ -1,0 +1,29 @@
+header = {
+    'derived_from' : 'hst_cos_lamptab_0255.rmap',
+    'filekind' : 'LAMPTAB',
+    'instrument' : 'COS',
+    'mapping' : 'REFERENCE',
+    'name' : 'hst_cos_lamptab_0256.rmap',
+    'observatory' : 'HST',
+    'parkey' : (('DETECTOR', 'OBSTYPE', 'LIFE_ADJ'), ('DATE-OBS', 'TIME-OBS')),
+    'reffile_format' : 'TABLE',
+    'reffile_required' : 'NONE',
+    'reffile_switch' : 'NONE',
+    'rmap_relevance' : '(OBSTYPE == "SPECTROSCOPIC")',
+    'sha1sum' : 'cf759af1b21232b8ad6812d5f2ada3e191a7ae91',
+}
+
+selector = Match({
+    ('FUV', 'SPECTROSCOPIC', '3.0') : UseAfter({
+        '2009-08-17 00:00:00' : '24914347l_lamp.fits',
+    }),
+    ('FUV', 'SPECTROSCOPIC', 'N/A') : UseAfter({
+        '1996-10-01 00:00:00' : 's7g1700il_lamp.fits',
+        '2009-06-08 00:00:00' : 'u6s1320rl_lamp.fits',
+        '2009-08-17 00:00:00' : '23n1744jl_lamp.fits',
+    }),
+    ('NUV', 'SPECTROSCOPIC', 'N/A') : UseAfter({
+        '1996-10-01 00:00:00' : 's7g17010l_lamp.fits',
+        '2009-07-28 00:00:00' : 'u1t1616ol_lamp.fits',
+    }),
+})
