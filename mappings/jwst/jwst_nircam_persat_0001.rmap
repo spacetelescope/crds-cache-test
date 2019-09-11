@@ -1,0 +1,17 @@
+header = {
+    'derived_from' : 'nircam_persat.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'persat',
+    'filetype' : 'PERSAT',
+    'instrument' : 'NIRCAM',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nircam_persat_0001.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR',),),
+    'sha1sum' : 'd3f2d6b3fbf15ec807c61ac405b67febead8c410',
+    'suffix' : 'persat',
+    'text_descr' : 'Persistence Saturation Threshold',
+}
+
+selector = Match({
+})

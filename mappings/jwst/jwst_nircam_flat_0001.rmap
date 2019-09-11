@@ -1,0 +1,44 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nircam_flat_0000.rmap',
+    'filekind' : 'FLAT',
+    'instrument' : 'NIRCAM',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nircam_flat_0001.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.INSTRUMENT.FILTER', 'META.INSTRUMENT.PUPIL'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '3234b2e7ad36f45d079b8e1918fb2414f7090b55',
+}
+
+selector = Match({
+    ('NRCA1', 'ANY', 'ANY') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_flat_0000.fits',
+    }),
+    ('NRCA2', 'ANY', 'ANY') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_flat_0002.fits',
+    }),
+    ('NRCA3', 'ANY', 'ANY') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_flat_0003.fits',
+    }),
+    ('NRCA4', 'ANY', 'ANY') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_flat_0004.fits',
+    }),
+    ('NRCALONG', 'ANY', 'ANY') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_flat_0005.fits',
+    }),
+    ('NRCB1', 'ANY', 'ANY') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_flat_0006.fits',
+    }),
+    ('NRCB2', 'ANY', 'ANY') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_flat_0007.fits',
+    }),
+    ('NRCB3', 'ANY', 'ANY') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_flat_0008.fits',
+    }),
+    ('NRCB4', 'ANY', 'ANY') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_flat_0009.fits',
+    }),
+    ('NRCBLONG', 'ANY', 'ANY') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_flat_0010.fits',
+    }),
+})

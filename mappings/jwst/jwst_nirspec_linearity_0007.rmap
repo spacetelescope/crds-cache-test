@@ -1,0 +1,25 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nirspec_linearity_0006.rmap',
+    'filekind' : 'LINEARITY',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_linearity_0007.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.SUBARRAY.NAME'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '5cac9379eb18453ab17cd299d5320208a2bc8866',
+    'substitutions' : {
+        'META.SUBARRAY.NAME' : {
+            'GENERIC' : 'N/A',
+        },
+    },
+}
+
+selector = Match({
+    ('NRS1', 'GENERIC') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_nirspec_linearity_0004.fits',
+    }),
+    ('NRS2', 'GENERIC') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_nirspec_linearity_0005.fits',
+    }),
+})

@@ -1,0 +1,36 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_system_calver_0011.rmap',
+    'file_ext' : '.json',
+    'filekind' : 'CALVER',
+    'filetype' : 'CALVER',
+    'instrument' : 'SYSTEM',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_system_calver_0013.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.CALIBRATION_SOFTWARE_VERSION',), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'reference_to_dataset' : {
+        'CAL_VER' : 'META.CALIBRATION_SOFTWARE_VERSION',
+    },
+    'sha1sum' : '849207ddb76a93b57213ee610a8da71104e8bd7d',
+    'suffix' : 'calver',
+    'text_descr' : 'Calibration Software Component Versions',
+}
+
+selector = Match({
+    '0.6.0' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_system_calver_0001.json',
+    }),
+    '0.6.0noop.dev331' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_system_calver_0001.json',
+    }),
+    '0.7.0rc2|0.7.0rc3' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_system_calver_0004.json',
+    }),
+    '0.7.0rc4|0.7.0rc5' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_system_calver_0005.json',
+    }),
+    '0.7.0rc6|0.7.0rc7|0.7.0rc8|0.7.0rc9' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_system_calver_0005.json',
+    }),
+})

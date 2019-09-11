@@ -1,0 +1,18 @@
+header = {
+    'derived_from' : 'jwst_niriss_trapdensity_0001.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'trapdensity',
+    'filetype' : 'TRAPDENSITY',
+    'instrument' : 'NIRISS',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_niriss_trapdensity_0002.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR',),),
+    'sha1sum' : '8bd3bd3bc372d845c96469ded5b9745ee2023e21',
+    'suffix' : 'trapdensity',
+    'text_descr' : 'Trap Density For Persistence Step',
+}
+
+selector = Match({
+    'NIS' : 'jwst_niriss_trapdensity_0001.fits',
+})

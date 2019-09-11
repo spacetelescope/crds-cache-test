@@ -1,0 +1,30 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nirspec_refpix_0005.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'refpix',
+    'filetype' : 'REFPIX',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_refpix_0006.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.EXPOSURE.READPATT'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '6485b4c430f9ef4584ce6864f3e4223dd97f25ed',
+    'substitutions' : {
+        'META.EXPOSURE.READPATT' : {
+            'ALLIRS2' : 'NRSIRS2|NRSIRS2RAPID',
+        },
+    },
+    'suffix' : 'refpix',
+    'text_descr' : 'Reference Pixels',
+}
+
+selector = Match({
+    ('ANY', 'NRS|NRSN16R4|NRSN32R8|NRSN8R2|NRSRAPID|NRSSLOW') : 'N/A',
+    ('NRS1', 'ALLIRS2') : UseAfter({
+        '2016-01-01 00:00:00' : 'jwst_nirspec_refpix_0001.fits',
+    }),
+    ('NRS2', 'ALLIRS2') : UseAfter({
+        '2016-01-01 00:00:00' : 'jwst_nirspec_refpix_0002.fits',
+    }),
+})

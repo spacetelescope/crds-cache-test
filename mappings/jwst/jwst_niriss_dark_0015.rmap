@@ -1,0 +1,76 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_niriss_dark_0014.rmap',
+    'filekind' : 'DARK',
+    'instrument' : 'NIRISS',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_niriss_dark_0015.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.EXPOSURE.READPATT', 'META.SUBARRAY.NAME'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '92f87db10fa7521b268af15c58117fce3a2b2f72',
+    'substitutions' : {
+        'META.SUBARRAY.NAME' : {
+            'GENERIC' : 'N/A',
+        },
+    },
+}
+
+selector = Match({
+    ('NIS', 'NIS', 'FULL') : UseAfter({
+        '2014-11-04 09:06:48' : 'jwst_niriss_dark_0005.fits',
+        '2015-10-01 00:00:00' : 'jwst_niriss_dark_0017.fits',
+        '2015-11-01 00:00:00' : 'jwst_niriss_dark_0027.fits',
+    }),
+    ('NIS', 'NISRAPID', 'FULL') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_niriss_dark_0036.fits',
+    }),
+    ('NIS', 'NISRAPID', 'SUB128') : UseAfter({
+        '2015-10-01 00:00:00' : 'jwst_niriss_dark_0007.fits',
+        '2015-11-01 00:00:00' : 'jwst_niriss_dark_0029.fits',
+    }),
+    ('NIS', 'NISRAPID', 'SUB256') : UseAfter({
+        '2015-10-01 00:00:00' : 'jwst_niriss_dark_0012.fits',
+        '2015-11-01 00:00:00' : 'jwst_niriss_dark_0028.fits',
+    }),
+    ('NIS', 'NISRAPID', 'SUB64') : UseAfter({
+        '2015-10-01 00:00:00' : 'jwst_niriss_dark_0014.fits',
+        '2015-11-01 00:00:00' : 'jwst_niriss_dark_0018.fits',
+    }),
+    ('NIS', 'NISRAPID', 'SUB80') : UseAfter({
+        '2015-10-01 00:00:00' : 'jwst_niriss_dark_0015.fits',
+        '2015-11-01 00:00:00' : 'jwst_niriss_dark_0020.fits',
+    }),
+    ('NIS', 'NISRAPID', 'SUBAMPCAL') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_niriss_dark_0025.fits',
+    }),
+    ('NIS', 'NISRAPID', 'SUBSTRIP256') : UseAfter({
+        '2015-10-01 00:00:00' : 'jwst_niriss_dark_0011.fits',
+        '2015-11-01 00:00:00' : 'jwst_niriss_dark_0030.fits',
+    }),
+    ('NIS', 'NISRAPID', 'SUBSTRIP96') : UseAfter({
+        '2015-10-01 00:00:00' : 'jwst_niriss_dark_0016.fits',
+        '2015-11-01 00:00:00' : 'jwst_niriss_dark_0031.fits',
+    }),
+    ('NIS', 'NISRAPID', 'SUBTAAMI') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_niriss_dark_0026.fits',
+    }),
+    ('NIS', 'NISRAPID', 'SUBTASOSS') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_niriss_dark_0024.fits',
+    }),
+    ('NIS', 'NISRAPID', 'WFSS128C') : UseAfter({
+        '2015-10-01 00:00:00' : 'jwst_niriss_dark_0008.fits',
+        '2015-11-01 00:00:00' : 'jwst_niriss_dark_0023.fits',
+    }),
+    ('NIS', 'NISRAPID', 'WFSS128R') : UseAfter({
+        '2015-10-01 00:00:00' : 'jwst_niriss_dark_0009.fits',
+        '2015-11-01 00:00:00' : 'jwst_niriss_dark_0021.fits',
+    }),
+    ('NIS', 'NISRAPID', 'WFSS64C') : UseAfter({
+        '2015-10-01 00:00:00' : 'jwst_niriss_dark_0013.fits',
+        '2015-11-01 00:00:00' : 'jwst_niriss_dark_0022.fits',
+    }),
+    ('NIS', 'NISRAPID', 'WFSS64R') : UseAfter({
+        '2015-10-01 00:00:00' : 'jwst_niriss_dark_0010.fits',
+        '2015-11-01 00:00:00' : 'jwst_niriss_dark_0019.fits',
+    }),
+})

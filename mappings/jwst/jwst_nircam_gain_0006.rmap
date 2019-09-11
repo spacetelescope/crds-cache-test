@@ -1,0 +1,49 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nircam_gain_0005.rmap',
+    'filekind' : 'GAIN',
+    'instrument' : 'NIRCAM',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nircam_gain_0006.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.SUBARRAY.NAME'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : 'f3993357d1b65a89ada07b51056dd9b2d68e536f',
+    'substitutions' : {
+        'META.SUBARRAY.NAME' : {
+            'GENERIC' : 'N/A',
+        },
+    },
+}
+
+selector = Match({
+    ('NRCA1', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_gain_0019.fits',
+    }),
+    ('NRCA2', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_gain_0001.fits',
+    }),
+    ('NRCA3', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_gain_0020.fits',
+    }),
+    ('NRCA4', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_gain_0021.fits',
+    }),
+    ('NRCALONG', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_gain_0022.fits',
+    }),
+    ('NRCB1', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_gain_0023.fits',
+    }),
+    ('NRCB2', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_gain_0024.fits',
+    }),
+    ('NRCB3', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_gain_0025.fits',
+    }),
+    ('NRCB4', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_gain_0026.fits',
+    }),
+    ('NRCBLONG', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_gain_0027.fits',
+    }),
+})

@@ -1,0 +1,23 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nircam_specwcs.rmap',
+    'file_ext' : '.asdf',
+    'filekind' : 'SPECWCS',
+    'filetype' : 'SPECWCS',
+    'instrument' : 'NIRCAM',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nircam_specwcs_0001.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.PUPIL', 'META.INSTRUMENT.MODULE', 'META.EXPOSURE.TYPE'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'reference_to_dataset' : {
+        'EXP_TYPE' : 'META.EXPOSURE.TYPE',
+        'MODULE' : 'META.INSTRUMENT.MODULE',
+        'PUPIL' : 'META.INSTRUMENT.PUPIL',
+    },
+    'sha1sum' : 'af4ba9897236008a305de41a54ca12c516c50c5a',
+    'suffix' : 'specwcs',
+    'text_descr' : 'Wide Field Slitless Spectral World Coordinate System',
+}
+
+selector = Match({
+})

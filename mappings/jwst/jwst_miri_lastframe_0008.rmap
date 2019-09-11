@@ -1,0 +1,64 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_miri_lastframe_0007.rmap',
+    'filekind' : 'LASTFRAME',
+    'instrument' : 'MIRI',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_miri_lastframe_0008.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.SUBARRAY.NAME', 'META.EXPOSURE.READPATT'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : 'dece20270933581d41d2d0b1ef112feeefa401d8',
+    'substitutions' : {
+        'META.SUBARRAY.NAME' : {
+            'GENERIC' : 'N/A',
+        },
+    },
+}
+
+selector = Match({
+    ('MIRIFULONG', 'GENERIC', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_lastframe_0016.fits',
+    }),
+    ('MIRIFULONG', 'GENERIC', 'SLOW') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_lastframe_0017.fits',
+    }),
+    ('MIRIFUSHORT', 'GENERIC', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_lastframe_0018.fits',
+    }),
+    ('MIRIFUSHORT', 'GENERIC', 'SLOW') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_lastframe_0031.fits',
+    }),
+    ('MIRIMAGE', 'BRIGHTSKY', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_lastframe_0020.fits',
+    }),
+    ('MIRIMAGE', 'GENERIC', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_lastframe_0021.fits',
+    }),
+    ('MIRIMAGE', 'GENERIC', 'SLOW') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_lastframe_0030.fits',
+    }),
+    ('MIRIMAGE', 'MASK1065', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_lastframe_0022.fits',
+    }),
+    ('MIRIMAGE', 'MASK1140', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_lastframe_0023.fits',
+    }),
+    ('MIRIMAGE', 'MASK1550', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_lastframe_0024.fits',
+    }),
+    ('MIRIMAGE', 'MASKLYOT', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_lastframe_0025.fits',
+    }),
+    ('MIRIMAGE', 'SUB128', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_lastframe_0027.fits',
+    }),
+    ('MIRIMAGE', 'SUB256', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_lastframe_0028.fits',
+    }),
+    ('MIRIMAGE', 'SUB64', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_lastframe_0029.fits',
+    }),
+    ('MIRIMAGE', 'SUBPRISM', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_lastframe_0026.fits',
+    }),
+})

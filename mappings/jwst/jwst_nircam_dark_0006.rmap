@@ -1,0 +1,49 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nircam_dark_0005.rmap',
+    'filekind' : 'DARK',
+    'instrument' : 'NIRCAM',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nircam_dark_0006.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.SUBARRAY.NAME'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '01c690f7616c85b3ef701e2e6eb7d878fc7b754d',
+    'substitutions' : {
+        'META.SUBARRAY.NAME' : {
+            'GENERIC' : 'N/A',
+        },
+    },
+}
+
+selector = Match({
+    ('NRCA1', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_dark_0040.fits',
+    }),
+    ('NRCA2', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_dark_0031.fits',
+    }),
+    ('NRCA3', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_dark_0041.fits',
+    }),
+    ('NRCA4', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_dark_0042.fits',
+    }),
+    ('NRCALONG', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_dark_0043.fits',
+    }),
+    ('NRCB1', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_dark_0044.fits',
+    }),
+    ('NRCB2', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_dark_0045.fits',
+    }),
+    ('NRCB3', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_dark_0046.fits',
+    }),
+    ('NRCB4', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_dark_0047.fits',
+    }),
+    ('NRCBLONG', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_dark_0048.fits',
+    }),
+})

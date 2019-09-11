@@ -1,0 +1,93 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nircam_distortion_0009.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'DISTORTION',
+    'filetype' : 'DISTORTION',
+    'instrument' : 'NIRCAM',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nircam_distortion_0010.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.EXPOSURE.TYPE', 'META.INSTRUMENT.DETECTOR', 'META.INSTRUMENT.CHANNEL'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'reference_to_dataset' : {
+        'CHANNEL' : 'META.INSTRUMENT.CHANNEL',
+        'DETECTOR' : 'META.INSTRUMENT.DETECTOR',
+        'EXP_TYPE' : 'META.EXPOSURE.TYPE',
+    },
+    'sha1sum' : '55c333775590b487a238057b4a4061fa911555f3',
+    'suffix' : 'distortion',
+    'text_descr' : 'Distortion',
+}
+
+selector = Match({
+    ('N/A', 'NRCA1', 'SHORT') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0001.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0019.asdf',
+    }),
+    ('N/A', 'NRCA2', 'SHORT') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0002.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0014.asdf',
+    }),
+    ('N/A', 'NRCA3', 'SHORT') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0003.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0012.asdf',
+    }),
+    ('N/A', 'NRCA4', 'SHORT') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0004.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0020.asdf',
+    }),
+    ('N/A', 'NRCALONG', 'LONG') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0005.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0017.asdf',
+    }),
+    ('N/A', 'NRCB1', 'SHORT') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0010.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0011.asdf',
+    }),
+    ('N/A', 'NRCB2', 'SHORT') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0009.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0015.asdf',
+    }),
+    ('N/A', 'NRCB3', 'SHORT') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0008.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0016.asdf',
+    }),
+    ('N/A', 'NRCB4', 'SHORT') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0007.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0018.asdf',
+    }),
+    ('N/A', 'NRCBLONG', 'LONG') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0006.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0013.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TACQ|NRC_TACONFIRM|NRC_FOCUS|NRC_TSIMAGE', 'NRCA1', 'SHORT') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0029.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TACQ|NRC_TACONFIRM|NRC_FOCUS|NRC_TSIMAGE', 'NRCA2', 'SHORT') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0024.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TACQ|NRC_TACONFIRM|NRC_FOCUS|NRC_TSIMAGE', 'NRCA3', 'SHORT') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0022.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TACQ|NRC_TACONFIRM|NRC_FOCUS|NRC_TSIMAGE', 'NRCA4', 'SHORT') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0030.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TACQ|NRC_TACONFIRM|NRC_FOCUS|NRC_TSIMAGE', 'NRCALONG', 'LONG') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0027.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TACQ|NRC_TACONFIRM|NRC_FOCUS|NRC_TSIMAGE', 'NRCB1', 'SHORT') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0021.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TACQ|NRC_TACONFIRM|NRC_FOCUS|NRC_TSIMAGE', 'NRCB2', 'SHORT') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0025.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TACQ|NRC_TACONFIRM|NRC_FOCUS|NRC_TSIMAGE', 'NRCB3', 'SHORT') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0026.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TACQ|NRC_TACONFIRM|NRC_FOCUS|NRC_TSIMAGE', 'NRCB4', 'SHORT') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0028.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TACQ|NRC_TACONFIRM|NRC_FOCUS|NRC_TSIMAGE', 'NRCBLONG', 'LONG') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0023.asdf',
+    }),
+})

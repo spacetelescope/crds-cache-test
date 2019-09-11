@@ -1,0 +1,104 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_niriss_flat_0013.rmap',
+    'filekind' : 'FLAT',
+    'instrument' : 'NIRISS',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_niriss_flat_0014.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.INSTRUMENT.FILTER', 'META.INSTRUMENT.PUPIL'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : 'eed6bf770fe45d2dabd44b7055a15466e0db4c23',
+}
+
+selector = Match({
+    ('NIS', 'CLEAR', 'CLEARP') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_niriss_flat_0004.fits',
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0126.fits',
+    }),
+    ('NIS', 'CLEAR', 'F090W') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_niriss_flat_0005.fits',
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0121.fits',
+    }),
+    ('NIS', 'CLEAR', 'F115W') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_niriss_flat_0006.fits',
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0119.fits',
+    }),
+    ('NIS', 'CLEAR', 'F140M') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0104.fits',
+    }),
+    ('NIS', 'CLEAR', 'F150W') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_niriss_flat_0007.fits',
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0108.fits',
+    }),
+    ('NIS', 'CLEAR', 'F158M') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0115.fits',
+    }),
+    ('NIS', 'CLEAR', 'F200W') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_niriss_flat_0008.fits',
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0107.fits',
+    }),
+    ('NIS', 'CLEAR', 'GR700XD') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_niriss_flat_0009.fits',
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0124.fits',
+    }),
+    ('NIS', 'CLEAR', 'N/A') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_niriss_flat_0003.fits',
+    }),
+    ('NIS', 'F277W', 'CLEARP|NRM') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_niriss_flat_0010.fits',
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0127.fits',
+    }),
+    ('NIS', 'F356W', 'CLEARP') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_niriss_flat_0011.fits',
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0102.fits',
+    }),
+    ('NIS', 'F380M', 'CLEARP|NRM') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0130.fits',
+    }),
+    ('NIS', 'F430M', 'CLEARP|NRM') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0129.fits',
+    }),
+    ('NIS', 'F444W', 'CLEARP') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_niriss_flat_0012.fits',
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0125.fits',
+    }),
+    ('NIS', 'F480M', 'CLEARP|NRM') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0128.fits',
+    }),
+    ('NIS', 'GR150C', 'F090W') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0118.fits',
+    }),
+    ('NIS', 'GR150C', 'F115W') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0120.fits',
+    }),
+    ('NIS', 'GR150C', 'F140M') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0101.fits',
+    }),
+    ('NIS', 'GR150C', 'F150W') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0114.fits',
+    }),
+    ('NIS', 'GR150C', 'F158M') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0113.fits',
+    }),
+    ('NIS', 'GR150C', 'F200W') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0123.fits',
+    }),
+    ('NIS', 'GR150R', 'F090W') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0122.fits',
+    }),
+    ('NIS', 'GR150R', 'F115W') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0105.fits',
+    }),
+    ('NIS', 'GR150R', 'F140M') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0110.fits',
+    }),
+    ('NIS', 'GR150R', 'F150W') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0103.fits',
+    }),
+    ('NIS', 'GR150R', 'F158M') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0109.fits',
+    }),
+    ('NIS', 'GR150R', 'F200W') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_niriss_flat_0106.fits',
+    }),
+})

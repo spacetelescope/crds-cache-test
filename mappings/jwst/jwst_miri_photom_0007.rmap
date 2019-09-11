@@ -1,0 +1,23 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_miri_photom_0006.rmap',
+    'filekind' : 'PHOTOM',
+    'instrument' : 'MIRI',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_miri_photom_0007.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR',), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '6b50de095b0f6c5ca255f7deb1127e8ab8d2a113',
+}
+
+selector = Match({
+    'MIRIFULONG' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_photom_0010.fits',
+    }),
+    'MIRIFUSHORT' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_photom_0011.fits',
+    }),
+    'MIRIMAGE' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_photom_0012.fits',
+    }),
+})

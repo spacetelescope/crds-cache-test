@@ -1,0 +1,78 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nirspec_fore_0008.rmap',
+    'file_ext' : '.asdf',
+    'filekind' : 'fore',
+    'filetype' : 'FORE',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_fore_0009.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.EXPOSURE.TYPE', 'META.INSTRUMENT.FILTER'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'reference_to_dataset' : {
+        'EXP_TYPE' : 'META.EXPOSURE.TYPE',
+        'FILTER' : 'META.INSTRUMENT.FILTER',
+    },
+    'sha1sum' : '4acd8ac48eeebe94ff654e0230836befc541e530',
+    'suffix' : 'fore',
+    'text_descr' : 'NIRSPEC FORE Model',
+}
+
+selector = Match({
+    ('N/A', 'CLEAR') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nirspec_fore_0008.asdf',
+    }),
+    ('N/A', 'F070LP') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nirspec_fore_0009.asdf',
+    }),
+    ('N/A', 'F100LP') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nirspec_fore_0010.asdf',
+    }),
+    ('N/A', 'F110W') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nirspec_fore_0011.asdf',
+    }),
+    ('N/A', 'F140X') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nirspec_fore_0012.asdf',
+    }),
+    ('N/A', 'F170LP') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nirspec_fore_0013.asdf',
+    }),
+    ('N/A', 'F290LP') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nirspec_fore_0014.asdf',
+    }),
+    ('NRS_AUTOFLAT', 'ANY') : 'N/A',
+    ('NRS_AUTOWAVE', 'ANY') : 'N/A',
+    ('NRS_BOTA', 'ANY') : 'N/A',
+    ('NRS_BRIGHTOBJ', 'ANY') : 'N/A',
+    ('NRS_CONFIRM', 'ANY') : 'N/A',
+    ('NRS_FIXEDSLIT', 'CLEAR') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nirspec_fore_0001.asdf',
+    }),
+    ('NRS_FIXEDSLIT', 'F070LP') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nirspec_fore_0002.asdf',
+    }),
+    ('NRS_FIXEDSLIT', 'F100LP') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nirspec_fore_0003.asdf',
+    }),
+    ('NRS_FIXEDSLIT', 'F110W') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nirspec_fore_0004.asdf',
+    }),
+    ('NRS_FIXEDSLIT', 'F140X') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nirspec_fore_0005.asdf',
+    }),
+    ('NRS_FIXEDSLIT', 'F170LP') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nirspec_fore_0006.asdf',
+    }),
+    ('NRS_FIXEDSLIT', 'F290LP') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nirspec_fore_0007.asdf',
+    }),
+    ('NRS_FOCUS', 'ANY') : 'N/A',
+    ('NRS_IFU', 'ANY') : 'N/A',
+    ('NRS_IMAGE', 'ANY') : 'N/A',
+    ('NRS_LAMP', 'ANY') : 'N/A',
+    ('NRS_MIMF', 'ANY') : 'N/A',
+    ('NRS_MSASPEC', 'ANY') : 'N/A',
+    ('NRS_TACONFIRM', 'ANY') : 'N/A',
+    ('NRS_TACQ', 'ANY') : 'N/A',
+    ('NRS_TASLIT', 'ANY') : 'N/A',
+})

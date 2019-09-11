@@ -1,0 +1,25 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_miri_area_0005.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'AREA',
+    'filetype' : 'AREA',
+    'instrument' : 'MIRI',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_miri_area_0006.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.INSTRUMENT.FILTER', 'META.EXPOSURE.TYPE'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '980e7bf7f7f33b8859808066a650b0632031e69c',
+    'suffix' : 'area',
+    'text_descr' : 'Pixel-Area Map',
+}
+
+selector = Match({
+    ('MIRIMAGE', 'ANY', 'MIR_IMAGE') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_miri_area_0002.fits',
+    }),
+    ('N/A', 'N/A', 'MIR_IMAGE') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_miri_area_0001.fits',
+    }),
+    ('N/A', 'N/A', 'NOT MIR_IMAGE') : 'N/A',
+})

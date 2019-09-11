@@ -1,0 +1,18 @@
+header = {
+    'derived_from' : 'jwst_0411.pmap',
+    'description' : 'Hand edited to add FGS, MIRI, NIRCAM, NIRISS PATHLOSS as N/A',
+    'mapping' : 'PIPELINE',
+    'name' : 'jwst_0412.pmap',
+    'observatory' : 'JWST',
+    'parkey' : ('META.INSTRUMENT.NAME',),
+    'sha1sum' : '6e436c9018cbb142c56b0444a750c4100f2452fa',
+}
+
+selector = {
+    'FGS' : 'jwst_fgs_0063.imap',
+    'MIRI' : 'jwst_miri_0143.imap',
+    'NIRCAM' : 'jwst_nircam_0088.imap',
+    'NIRISS' : 'jwst_niriss_0090.imap',
+    'NIRSPEC' : 'jwst_nirspec_0152.imap',
+    'SYSTEM' : 'jwst_system_0015.imap',
+}

@@ -1,0 +1,48 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nircam_persat_0002.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'persat',
+    'filetype' : 'PERSAT',
+    'instrument' : 'NIRCAM',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nircam_persat_0003.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR',), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '5b6fe87cde3e1eff39932184a1c40912108429c6',
+    'suffix' : 'persat',
+    'text_descr' : 'Persistence Saturation Threshold',
+}
+
+selector = Match({
+    'NRCA1' : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_persat_0009.fits',
+    }),
+    'NRCA2' : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_persat_0005.fits',
+    }),
+    'NRCA3' : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_persat_0010.fits',
+    }),
+    'NRCA4' : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_persat_0004.fits',
+    }),
+    'NRCALONG' : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_persat_0003.fits',
+    }),
+    'NRCB1' : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_persat_0006.fits',
+    }),
+    'NRCB2' : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_persat_0008.fits',
+    }),
+    'NRCB3' : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_persat_0002.fits',
+    }),
+    'NRCB4' : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_persat_0001.fits',
+    }),
+    'NRCBLONG' : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_persat_0007.fits',
+    }),
+})

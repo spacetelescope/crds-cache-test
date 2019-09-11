@@ -1,0 +1,21 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_niriss_wavelengthrange_0001.rmap',
+    'file_ext' : '.asdf',
+    'filekind' : 'wavelengthrange',
+    'filetype' : 'WAVELENGTHRANGE',
+    'instrument' : 'NIRISS',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_niriss_wavelengthrange_0002.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.EXPOSURE.TYPE',), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '151a7914501dc28766cd855d31a819a40b733674',
+    'suffix' : 'wavelengthrange',
+    'text_descr' : 'Spectral Configurations',
+}
+
+selector = Match({
+    'NIS_WFSS' : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_niriss_wavelengthrange_0001.asdf',
+    }),
+})

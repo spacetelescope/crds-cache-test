@@ -1,0 +1,18 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_miri_cubepar.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'CUBEPAR',
+    'filetype' : 'CUBEPAR',
+    'instrument' : 'MIRI',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_miri_cubepar_0001.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.EXPOSURE.TYPE',), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '170e189f6b1ba7be239e7b7e2010ffe11527a9bf',
+    'suffix' : 'cubepar',
+    'text_descr' : 'MRS IFU Cube defaults',
+}
+
+selector = Match({
+})

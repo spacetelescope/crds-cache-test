@@ -1,0 +1,22 @@
+header = {
+    'derived_from' : 'jwst_nirspec_ifufore_0003.rmap',
+    'file_ext' : '.asdf',
+    'filekind' : 'ifufore',
+    'filetype' : 'IFUFORE',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_ifufore_0004.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.EXPOSURE.TYPE',),),
+    'reference_to_dataset' : {
+        'EXP_TYPE' : 'META.EXPOSURE.TYPE',
+    },
+    'sha1sum' : 'de7e0133440771a1f431d09acc03d252c9d7425e',
+    'suffix' : 'ifufore',
+    'text_descr' : 'IFU fore',
+}
+
+selector = Match({
+    'N/A' : 'N/A',
+    'NRS_IFU' : 'jwst_nirspec_ifufore_0001.asdf',
+})

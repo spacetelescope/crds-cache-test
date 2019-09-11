@@ -1,0 +1,57 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nirspec_fore_0007.rmap',
+    'file_ext' : '.asdf',
+    'filekind' : 'fore',
+    'filetype' : 'FORE',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_fore_0008.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.EXPOSURE.TYPE', 'META.INSTRUMENT.FILTER'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'reference_to_dataset' : {
+        'EXP_TYPE' : 'META.EXPOSURE.TYPE',
+        'FILTER' : 'META.INSTRUMENT.FILTER',
+    },
+    'sha1sum' : '0fba77b32cd3979b0432e6b09ee91075082cbe40',
+    'suffix' : 'fore',
+    'text_descr' : 'NIRSPEC FORE Model',
+}
+
+selector = Match({
+    ('NRS_AUTOFLAT', 'ANY') : 'N/A',
+    ('NRS_AUTOWAVE', 'ANY') : 'N/A',
+    ('NRS_BOTA', 'ANY') : 'N/A',
+    ('NRS_BRIGHTOBJ', 'ANY') : 'N/A',
+    ('NRS_CONFIRM', 'ANY') : 'N/A',
+    ('NRS_FIXEDSLIT', 'CLEAR') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nirspec_fore_0001.asdf',
+    }),
+    ('NRS_FIXEDSLIT', 'F070LP') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nirspec_fore_0002.asdf',
+    }),
+    ('NRS_FIXEDSLIT', 'F100LP') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nirspec_fore_0003.asdf',
+    }),
+    ('NRS_FIXEDSLIT', 'F110W') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nirspec_fore_0004.asdf',
+    }),
+    ('NRS_FIXEDSLIT', 'F140X') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nirspec_fore_0005.asdf',
+    }),
+    ('NRS_FIXEDSLIT', 'F170LP') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nirspec_fore_0006.asdf',
+    }),
+    ('NRS_FIXEDSLIT', 'F290LP') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nirspec_fore_0007.asdf',
+    }),
+    ('NRS_FOCUS', 'ANY') : 'N/A',
+    ('NRS_IFU', 'ANY') : 'N/A',
+    ('NRS_IMAGE', 'ANY') : 'N/A',
+    ('NRS_LAMP', 'ANY') : 'N/A',
+    ('NRS_MIMF', 'ANY') : 'N/A',
+    ('NRS_MSASPEC', 'ANY') : 'N/A',
+    ('NRS_TACONFIRM', 'ANY') : 'N/A',
+    ('NRS_TACQ', 'ANY') : 'N/A',
+    ('NRS_TASLIT', 'ANY') : 'N/A',
+})

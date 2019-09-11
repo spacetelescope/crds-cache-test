@@ -1,0 +1,84 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_miri_dark_0013.rmap',
+    'filekind' : 'DARK',
+    'instrument' : 'MIRI',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_miri_dark_0014.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.EXPOSURE.READPATT', 'META.SUBARRAY.NAME'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '70e66944526788e9ad44d2894e59fd976b6e9a80',
+    'substitutions' : {
+        'META.SUBARRAY.NAME' : {
+            'GENERIC' : 'N/A',
+        },
+    },
+}
+
+selector = Match({
+    ('MIRIFULONG', 'N/A', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0029.fits',
+        '2015-08-01 00:00:00' : 'jwst_miri_dark_0050.fits',
+    }),
+    ('MIRIFULONG', 'SLOW', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0030.fits',
+        '2015-08-01 00:00:00' : 'jwst_miri_dark_0057.fits',
+    }),
+    ('MIRIFUSHORT', 'N/A', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0031.fits',
+        '2015-08-01 00:00:00' : 'jwst_miri_dark_0056.fits',
+    }),
+    ('MIRIFUSHORT', 'SLOW', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0032.fits',
+        '2015-08-01 00:00:00' : 'jwst_miri_dark_0044.fits',
+    }),
+    ('MIRIMAGE', 'FAST', 'BRIGHTSKY') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0033.fits',
+        '2015-08-01 00:00:00' : 'jwst_miri_dark_0053.fits',
+    }),
+    ('MIRIMAGE', 'FAST', 'MASK1065') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0035.fits',
+        '2015-08-01 00:00:00' : 'jwst_miri_dark_0047.fits',
+    }),
+    ('MIRIMAGE', 'FAST', 'MASK1140') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0036.fits',
+        '2015-08-01 00:00:00' : 'jwst_miri_dark_0054.fits',
+    }),
+    ('MIRIMAGE', 'FAST', 'MASK1550') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0037.fits',
+        '2015-08-01 00:00:00' : 'jwst_miri_dark_0052.fits',
+    }),
+    ('MIRIMAGE', 'FAST', 'MASKLYOT') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0038.fits',
+        '2015-08-01 00:00:00' : 'jwst_miri_dark_0046.fits',
+    }),
+    ('MIRIMAGE', 'FAST', 'SLITLESSPRISM') : UseAfter({
+        '2015-08-01 00:00:00' : 'jwst_miri_dark_0048.fits',
+    }),
+    ('MIRIMAGE', 'FAST', 'SUB128') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0040.fits',
+        '2015-08-01 00:00:00' : 'jwst_miri_dark_0045.fits',
+    }),
+    ('MIRIMAGE', 'FAST', 'SUB256') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0041.fits',
+        '2015-08-01 00:00:00' : 'jwst_miri_dark_0051.fits',
+    }),
+    ('MIRIMAGE', 'FAST', 'SUB64') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0042.fits',
+        '2015-08-01 00:00:00' : 'jwst_miri_dark_0055.fits',
+    }),
+    ('MIRIMAGE', 'FAST', 'SUBPRISM') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0039.fits',
+    }),
+    ('MIRIMAGE', 'N/A', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0034.fits',
+        '2015-08-01 00:00:00' : 'jwst_miri_dark_0058.fits',
+    }),
+    ('MIRIMAGE', 'SLOW', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0043.fits',
+        '2015-08-01 00:00:00' : 'jwst_miri_dark_0049.fits',
+    }),
+    ('MIRIMAGE', 'SLOW', 'SUBPRISM') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_dark_0025.fits',
+    }),
+})

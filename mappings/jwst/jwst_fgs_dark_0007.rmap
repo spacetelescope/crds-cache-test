@@ -1,0 +1,26 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_fgs_dark_0006.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'DARK',
+    'filetype' : 'DARK',
+    'instrument' : 'FGS',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_fgs_dark_0007.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.EXPOSURE.READPATT', 'META.SUBARRAY.NAME'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : 'e88a6d311d1636f202441df01880932cf8beca72',
+    'suffix' : 'dark',
+    'text_descr' : 'Dark Frame',
+}
+
+selector = Match({
+    ('GUIDER1', 'FGSRAPID', 'FULL') : UseAfter({
+        '2014-11-04 09:06:48' : 'jwst_fgs_dark_0001.fits',
+        '2015-11-01 00:00:00' : 'jwst_fgs_dark_0006.fits',
+    }),
+    ('GUIDER2', 'FGSRAPID', 'FULL') : UseAfter({
+        '2014-11-04 09:06:48' : 'jwst_fgs_dark_0002.fits',
+        '2015-11-01 00:00:00' : 'jwst_fgs_dark_0005.fits',
+    }),
+})

@@ -1,0 +1,24 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_fgs_photom_0002.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'PHOTOM',
+    'filetype' : 'PHOTOMETRIC CALIBRATION',
+    'instrument' : 'FGS',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_fgs_photom_0003.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR',), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '1633a37c89bc46733885e436af7cde68bf1183d8',
+    'suffix' : 'photom',
+    'text_descr' : 'Absolute Calibration',
+}
+
+selector = Match({
+    'GUIDER1' : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_fgs_photom_0001.fits',
+    }),
+    'GUIDER2' : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_fgs_photom_0002.fits',
+    }),
+})

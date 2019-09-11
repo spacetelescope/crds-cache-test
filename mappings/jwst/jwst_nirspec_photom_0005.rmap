@@ -1,0 +1,20 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nirspec_photom_0004.rmap',
+    'filekind' : 'PHOTOM',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_photom_0005.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR',), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '0861249a010e0f71889d86a5f779bc748c1e2704',
+}
+
+selector = Match({
+    'NRS1' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nirspec_photom_0009.fits',
+    }),
+    'NRS2' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nirspec_photom_0010.fits',
+    }),
+})

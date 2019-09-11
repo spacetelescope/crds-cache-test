@@ -1,0 +1,367 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nircam_dark_0014.rmap',
+    'filekind' : 'DARK',
+    'instrument' : 'NIRCAM',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nircam_dark_0016.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.SUBARRAY.NAME'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : 'ead2d2e6b531a19b6bb9f350ddc5b317e1e98bca',
+    'substitutions' : {
+        'META.SUBARRAY.NAME' : {
+            'GENERIC' : 'N/A',
+        },
+    },
+}
+
+selector = Match({
+    ('NRCA1', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_dark_0040.fits',
+    }),
+    ('NRCA1', 'SUB160') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0153.fits',
+    }),
+    ('NRCA1', 'SUB160P') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0186.fits',
+    }),
+    ('NRCA1', 'SUB320') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0223.fits',
+    }),
+    ('NRCA1', 'SUB400P') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0200.fits',
+    }),
+    ('NRCA1', 'SUB640') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0152.fits',
+    }),
+    ('NRCA1', 'SUB64P') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0157.fits',
+    }),
+    ('NRCA1', 'SUB96DHSPILA') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0212.fits',
+    }),
+    ('NRCA1', 'SUBGRISM128') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0204.fits',
+    }),
+    ('NRCA1', 'SUBGRISM256') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0213.fits',
+    }),
+    ('NRCA1', 'SUBGRISM64') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0197.fits',
+    }),
+    ('NRCA2', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_dark_0031.fits',
+    }),
+    ('NRCA2', 'MASKA210R|SUB640A210R') : UseAfter({
+        '2015-06-01 00:00:00' : 'jwst_nircam_dark_0073.fits',
+    }),
+    ('NRCA2', 'SUB160') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0216.fits',
+    }),
+    ('NRCA2', 'SUB160P') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0184.fits',
+    }),
+    ('NRCA2', 'SUB320') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0155.fits',
+    }),
+    ('NRCA2', 'SUB400P') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0221.fits',
+    }),
+    ('NRCA2', 'SUB640') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0215.fits',
+    }),
+    ('NRCA2', 'SUB64P') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0209.fits',
+    }),
+    ('NRCA2', 'SUB96DHSPILA') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0210.fits',
+    }),
+    ('NRCA2', 'SUBGRISM128') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0175.fits',
+    }),
+    ('NRCA2', 'SUBGRISM256') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0160.fits',
+    }),
+    ('NRCA2', 'SUBGRISM64') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0226.fits',
+    }),
+    ('NRCA3', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_dark_0041.fits',
+    }),
+    ('NRCA3', 'SUB160') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0174.fits',
+    }),
+    ('NRCA3', 'SUB160P') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0181.fits',
+    }),
+    ('NRCA3', 'SUB320') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0193.fits',
+    }),
+    ('NRCA3', 'SUB400P') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0172.fits',
+    }),
+    ('NRCA3', 'SUB640') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0207.fits',
+    }),
+    ('NRCA3', 'SUB64P') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0208.fits',
+    }),
+    ('NRCA3', 'SUB8FP1A') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0074.fits',
+    }),
+    ('NRCA3', 'SUB96DHSPILA') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0194.fits',
+    }),
+    ('NRCA3', 'SUBGRISM128') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0173.fits',
+    }),
+    ('NRCA3', 'SUBGRISM256') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0196.fits',
+    }),
+    ('NRCA3', 'SUBGRISM64') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0198.fits',
+    }),
+    ('NRCA4', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_dark_0042.fits',
+    }),
+    ('NRCA4', 'SUB160') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0182.fits',
+    }),
+    ('NRCA4', 'SUB160P') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0151.fits',
+    }),
+    ('NRCA4', 'SUB320') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0188.fits',
+    }),
+    ('NRCA4', 'SUB400P') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0190.fits',
+    }),
+    ('NRCA4', 'SUB640') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0179.fits',
+    }),
+    ('NRCA4', 'SUB64P') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0189.fits',
+    }),
+    ('NRCA4', 'SUB96DHSPILA') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0217.fits',
+    }),
+    ('NRCA4', 'SUBGRISM128') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0220.fits',
+    }),
+    ('NRCA4', 'SUBGRISM256') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0218.fits',
+    }),
+    ('NRCA4', 'SUBGRISM64') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0176.fits',
+    }),
+    ('NRCALONG', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_dark_0043.fits',
+    }),
+    ('NRCALONG', 'MASKA430R|SUB320A430R') : UseAfter({
+        '2015-06-01 00:00:00' : 'jwst_nircam_dark_0070.fits',
+    }),
+    ('NRCALONG', 'SUB160') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0162.fits',
+    }),
+    ('NRCALONG', 'SUB160P') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0206.fits',
+    }),
+    ('NRCALONG', 'SUB320') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0202.fits',
+    }),
+    ('NRCALONG', 'SUB320A335R') : UseAfter({
+        '2015-10-01 00:00:00' : 'jwst_nircam_dark_0078.fits',
+    }),
+    ('NRCALONG', 'SUB400P') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0158.fits',
+    }),
+    ('NRCALONG', 'SUB640') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0171.fits',
+    }),
+    ('NRCALONG', 'SUB64P') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0201.fits',
+    }),
+    ('NRCALONG', 'SUB96DHSPILA') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0224.fits',
+    }),
+    ('NRCALONG', 'SUBGRISM128') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0191.fits',
+    }),
+    ('NRCALONG', 'SUBGRISM256') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0219.fits',
+    }),
+    ('NRCALONG', 'SUBGRISM64') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0178.fits',
+    }),
+    ('NRCB1', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_dark_0044.fits',
+    }),
+    ('NRCB1', 'SUB160') : UseAfter({
+        '2015-06-01 00:00:00' : 'jwst_nircam_dark_0051.fits',
+    }),
+    ('NRCB1', 'SUB160P') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0166.fits',
+    }),
+    ('NRCB1', 'SUB320') : UseAfter({
+        '2015-06-01 00:00:00' : 'jwst_nircam_dark_0059.fits',
+    }),
+    ('NRCB1', 'SUB400P') : UseAfter({
+        '2015-10-01 00:00:00' : 'jwst_nircam_dark_0076.fits',
+    }),
+    ('NRCB1', 'SUB640') : UseAfter({
+        '2015-06-01 00:00:00' : 'jwst_nircam_dark_0069.fits',
+    }),
+    ('NRCB1', 'SUB64P') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0161.fits',
+    }),
+    ('NRCB1', 'SUB96DHSPILB') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0169.fits',
+    }),
+    ('NRCB1', 'SUBGRISM128') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0183.fits',
+    }),
+    ('NRCB1', 'SUBGRISM256') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0156.fits',
+    }),
+    ('NRCB1', 'SUBGRISM64') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0163.fits',
+    }),
+    ('NRCB2', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_dark_0045.fits',
+    }),
+    ('NRCB2', 'SUB160') : UseAfter({
+        '2015-06-01 00:00:00' : 'jwst_nircam_dark_0054.fits',
+    }),
+    ('NRCB2', 'SUB160P') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0167.fits',
+    }),
+    ('NRCB2', 'SUB320') : UseAfter({
+        '2015-06-01 00:00:00' : 'jwst_nircam_dark_0057.fits',
+    }),
+    ('NRCB2', 'SUB400P') : UseAfter({
+        '2015-10-01 00:00:00' : 'jwst_nircam_dark_0075.fits',
+    }),
+    ('NRCB2', 'SUB640') : UseAfter({
+        '2015-06-01 00:00:00' : 'jwst_nircam_dark_0068.fits',
+    }),
+    ('NRCB2', 'SUB64P') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0180.fits',
+    }),
+    ('NRCB2', 'SUB96DHSPILB') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0205.fits',
+    }),
+    ('NRCB2', 'SUBGRISM128') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0195.fits',
+    }),
+    ('NRCB2', 'SUBGRISM256') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0165.fits',
+    }),
+    ('NRCB2', 'SUBGRISM64') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0187.fits',
+    }),
+    ('NRCB3', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_dark_0046.fits',
+    }),
+    ('NRCB3', 'MASKBSWB|SUB640ASWB') : UseAfter({
+        '2015-06-01 00:00:00' : 'jwst_nircam_dark_0072.fits',
+    }),
+    ('NRCB3', 'SUB160') : UseAfter({
+        '2015-10-01 00:00:00' : 'jwst_nircam_dark_0049.fits',
+    }),
+    ('NRCB3', 'SUB160P') : UseAfter({
+        '2015-06-01 00:00:00' : 'jwst_nircam_dark_0050.fits',
+    }),
+    ('NRCB3', 'SUB320') : UseAfter({
+        '2015-06-01 00:00:00' : 'jwst_nircam_dark_0060.fits',
+    }),
+    ('NRCB3', 'SUB400P') : UseAfter({
+        '2015-06-01 00:00:00' : 'jwst_nircam_dark_0064.fits',
+    }),
+    ('NRCB3', 'SUB640') : UseAfter({
+        '2015-06-01 00:00:00' : 'jwst_nircam_dark_0055.fits',
+    }),
+    ('NRCB3', 'SUB64P') : UseAfter({
+        '2015-06-01 00:00:00' : 'jwst_nircam_dark_0056.fits',
+    }),
+    ('NRCB3', 'SUB96DHSPILB') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0159.fits',
+    }),
+    ('NRCB3', 'SUBGRISM128') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0170.fits',
+    }),
+    ('NRCB3', 'SUBGRISM256') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0203.fits',
+    }),
+    ('NRCB3', 'SUBGRISM64') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0214.fits',
+    }),
+    ('NRCB4', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_dark_0047.fits',
+    }),
+    ('NRCB4', 'SUB160') : UseAfter({
+        '2015-06-01 00:00:00' : 'jwst_nircam_dark_0065.fits',
+    }),
+    ('NRCB4', 'SUB160P') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0185.fits',
+    }),
+    ('NRCB4', 'SUB320') : UseAfter({
+        '2015-06-01 00:00:00' : 'jwst_nircam_dark_0058.fits',
+    }),
+    ('NRCB4', 'SUB400P') : UseAfter({
+        '2015-10-01 00:00:00' : 'jwst_nircam_dark_0077.fits',
+    }),
+    ('NRCB4', 'SUB640') : UseAfter({
+        '2015-06-01 00:00:00' : 'jwst_nircam_dark_0061.fits',
+    }),
+    ('NRCB4', 'SUB64P') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0164.fits',
+    }),
+    ('NRCB4', 'SUB96DHSPILB') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0192.fits',
+    }),
+    ('NRCB4', 'SUBGRISM128') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0177.fits',
+    }),
+    ('NRCB4', 'SUBGRISM256') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0168.fits',
+    }),
+    ('NRCB4', 'SUBGRISM64') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0199.fits',
+    }),
+    ('NRCBLONG', 'FULL') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_dark_0048.fits',
+    }),
+    ('NRCBLONG', 'MASKBLWB|SUB320ALWB') : UseAfter({
+        '2015-06-01 00:00:00' : 'jwst_nircam_dark_0071.fits',
+    }),
+    ('NRCBLONG', 'SUB160') : UseAfter({
+        '2015-06-01 00:00:00' : 'jwst_nircam_dark_0062.fits',
+    }),
+    ('NRCBLONG', 'SUB160P') : UseAfter({
+        '2015-06-01 00:00:00' : 'jwst_nircam_dark_0063.fits',
+    }),
+    ('NRCBLONG', 'SUB320') : UseAfter({
+        '2015-06-01 00:00:00' : 'jwst_nircam_dark_0066.fits',
+    }),
+    ('NRCBLONG', 'SUB400P') : UseAfter({
+        '2015-06-01 00:00:00' : 'jwst_nircam_dark_0067.fits',
+    }),
+    ('NRCBLONG', 'SUB640') : UseAfter({
+        '2015-06-01 00:00:00' : 'jwst_nircam_dark_0052.fits',
+    }),
+    ('NRCBLONG', 'SUB64P') : UseAfter({
+        '2015-06-01 00:00:00' : 'jwst_nircam_dark_0053.fits',
+    }),
+    ('NRCBLONG', 'SUB96DHSPILB') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0225.fits',
+    }),
+    ('NRCBLONG', 'SUBGRISM128') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0154.fits',
+    }),
+    ('NRCBLONG', 'SUBGRISM256') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0211.fits',
+    }),
+    ('NRCBLONG', 'SUBGRISM64') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nircam_dark_0222.fits',
+    }),
+})

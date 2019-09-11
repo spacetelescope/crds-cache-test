@@ -1,0 +1,27 @@
+header = {
+    'derived_from' : 'jwst_nircam_trappars_0001.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'trappars',
+    'filetype' : 'TRAPPARS',
+    'instrument' : 'NIRCAM',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nircam_trappars_0002.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR',),),
+    'sha1sum' : 'ea9ec3903bf7642872c5b2b278fc93e91ec8f41f',
+    'suffix' : 'trappars',
+    'text_descr' : 'Trap Capture and Decay Parameters',
+}
+
+selector = Match({
+    'NRCA1' : 'jwst_nircam_trappars_0010.fits',
+    'NRCA2' : 'jwst_nircam_trappars_0005.fits',
+    'NRCA3' : 'jwst_nircam_trappars_0008.fits',
+    'NRCA4' : 'jwst_nircam_trappars_0004.fits',
+    'NRCALONG' : 'jwst_nircam_trappars_0002.fits',
+    'NRCB1' : 'jwst_nircam_trappars_0001.fits',
+    'NRCB2' : 'jwst_nircam_trappars_0009.fits',
+    'NRCB3' : 'jwst_nircam_trappars_0003.fits',
+    'NRCB4' : 'jwst_nircam_trappars_0007.fits',
+    'NRCBLONG' : 'jwst_nircam_trappars_0006.fits',
+})

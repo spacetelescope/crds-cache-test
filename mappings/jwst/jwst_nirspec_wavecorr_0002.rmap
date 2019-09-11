@@ -1,0 +1,19 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nircam_wavecorr.rmap',
+    'file_ext' : '.asdf',
+    'filekind' : 'WAVECORR',
+    'filetype' : 'WAVECORR',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_wavecorr_0002.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.EXPOSURE.TYPE',), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '8ba9e9817ba7276827685f6a26ecf621ae4f7a09',
+    'suffix' : 'wavecorr',
+    'text_descr' : 'Wavelength Zero-point Correction',
+}
+
+selector = Match({
+    'N/A' : 'N/A',
+})

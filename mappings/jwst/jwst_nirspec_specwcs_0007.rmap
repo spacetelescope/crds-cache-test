@@ -1,0 +1,32 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nirspec_specwcs_0006.rmap',
+    'filekind' : 'SPECWCS',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_specwcs_0007.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.EXPOSURE.TYPE'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'reference_to_dataset' : {
+        'DETECTOR' : 'META.INSTRUMENT.DETECTOR',
+        'EXP_TYPE' : 'META.EXPOSURE.TYPE',
+    },
+    'sha1sum' : '8ad1897662d6eb2c25522f2fc3a522dfb277a180',
+}
+
+selector = Match({
+    ('ANY', 'NRS_AUTOFLAT') : 'N/A',
+    ('ANY', 'NRS_AUTOWAVE') : 'N/A',
+    ('ANY', 'NRS_BRIGHTOBJ') : 'N/A',
+    ('ANY', 'NRS_CONFIRM') : 'N/A',
+    ('ANY', 'NRS_IFU') : 'N/A',
+    ('ANY', 'NRS_IMAGE') : 'N/A',
+    ('ANY', 'NRS_LAMP') : 'N/A',
+    ('ANY', 'NRS_MSASPEC') : 'N/A',
+    ('ANY', 'NRS_TACONFIRM') : 'N/A',
+    ('ANY', 'NRS_TACQ') : 'N/A',
+    ('ANY', 'NRS_TASLIT') : 'N/A',
+    ('NRS1|NRS2', 'N/A') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nirspec_specwcs_0001.json',
+    }),
+})

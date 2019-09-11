@@ -1,0 +1,26 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_niriss_linearity_0013.rmap',
+    'filekind' : 'LINEARITY',
+    'instrument' : 'NIRISS',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_niriss_linearity_0014.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.SUBARRAY.NAME'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : 'e1ab22aaf4f94cf60197905245716293f10006e6',
+    'substitutions' : {
+        'META.SUBARRAY.NAME' : {
+            'GENERIC' : 'N/A',
+        },
+    },
+}
+
+selector = Match({
+    ('NIS', 'FULL') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_niriss_linearity_0006.fits',
+    }),
+    ('NIS', 'GENERIC') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_niriss_linearity_0005.fits',
+        '2015-11-01 00:00:00' : 'jwst_niriss_linearity_0011.fits',
+    }),
+})

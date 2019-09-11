@@ -1,0 +1,64 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_miri_readnoise_0004.rmap',
+    'filekind' : 'READNOISE',
+    'instrument' : 'MIRI',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_miri_readnoise_0005.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.SUBARRAY.NAME', 'META.EXPOSURE.READPATT'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '1df4224e785b01a0a69871d0efe1c1c52a148705',
+    'substitutions' : {
+        'META.SUBARRAY.NAME' : {
+            'GENERIC' : 'N/A',
+        },
+    },
+}
+
+selector = Match({
+    ('MIRIFULONG', 'GENERIC', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_readnoise_0003.fits',
+    }),
+    ('MIRIFULONG', 'GENERIC', 'SLOW') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_readnoise_0004.fits',
+    }),
+    ('MIRIFUSHORT', 'GENERIC', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_readnoise_0005.fits',
+    }),
+    ('MIRIFUSHORT', 'GENERIC', 'SLOW') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_readnoise_0006.fits',
+    }),
+    ('MIRIMAGE', 'BRIGHTSKY', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_readnoise_0007.fits',
+    }),
+    ('MIRIMAGE', 'GENERIC', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_readnoise_0012.fits',
+    }),
+    ('MIRIMAGE', 'GENERIC', 'SLOW') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_readnoise_0017.fits',
+    }),
+    ('MIRIMAGE', 'MASK1065', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_readnoise_0008.fits',
+    }),
+    ('MIRIMAGE', 'MASK1140', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_readnoise_0009.fits',
+    }),
+    ('MIRIMAGE', 'MASK1550', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_readnoise_0010.fits',
+    }),
+    ('MIRIMAGE', 'MASKLYOT', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_readnoise_0011.fits',
+    }),
+    ('MIRIMAGE', 'SLITLESSPRISM', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_readnoise_0013.fits',
+    }),
+    ('MIRIMAGE', 'SUB128', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_readnoise_0014.fits',
+    }),
+    ('MIRIMAGE', 'SUB256', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_readnoise_0015.fits',
+    }),
+    ('MIRIMAGE', 'SUB64', 'FAST') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_readnoise_0016.fits',
+    }),
+})

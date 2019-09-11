@@ -1,0 +1,17 @@
+header = {
+    'derived_from' : 'jwst_0146.pmap',
+    'description' : 'Hand edited to add NIRSPEC with V2V3 is N/A.',
+    'mapping' : 'PIPELINE',
+    'name' : 'jwst_0147.pmap',
+    'observatory' : 'JWST',
+    'parkey' : ('META.INSTRUMENT.NAME',),
+    'sha1sum' : 'afc6784785459ce302ec12703fefbef5bdc87a32',
+}
+
+selector = {
+    'FGS' : 'jwst_fgs_0032.imap',
+    'MIRI' : 'jwst_miri_0073.imap',
+    'NIRCAM' : 'jwst_nircam_0044.imap',
+    'NIRISS' : 'jwst_niriss_0045.imap',
+    'NIRSPEC' : 'jwst_nirspec_0057.imap',
+}

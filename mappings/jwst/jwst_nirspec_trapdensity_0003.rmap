@@ -1,0 +1,24 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nirspec_trapdensity_0002.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'trapdensity',
+    'filetype' : 'TRAPDENSITY',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_trapdensity_0003.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR',), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : 'a53800dd21838c9ebd09d3299db4a30bfad82952',
+    'suffix' : 'trapdensity',
+    'text_descr' : 'Trap Density For Persistence Step',
+}
+
+selector = Match({
+    'NRS1' : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nirspec_trapdensity_0001.fits',
+    }),
+    'NRS2' : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nirspec_trapdensity_0002.fits',
+    }),
+})

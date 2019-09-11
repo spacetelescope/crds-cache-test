@@ -1,0 +1,26 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_niriss_gain_0007.rmap',
+    'filekind' : 'GAIN',
+    'instrument' : 'NIRISS',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_niriss_gain_0008.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.SUBARRAY.NAME'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : 'fbad330eefa4f026219f7d0cd8aabaff5a643890',
+    'substitutions' : {
+        'META.SUBARRAY.NAME' : {
+            'GENERIC' : 'N/A',
+        },
+    },
+}
+
+selector = Match({
+    ('NIS', 'FULL') : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_niriss_gain_0002.fits',
+    }),
+    ('NIS', 'GENERIC') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_niriss_gain_0001.fits',
+        '2015-11-01 00:00:00' : 'jwst_niriss_gain_0004.fits',
+    }),
+})

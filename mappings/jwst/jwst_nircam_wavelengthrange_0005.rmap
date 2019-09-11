@@ -1,0 +1,28 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nircam_wavelengthrange_0003.rmap',
+    'file_ext' : '.asdf',
+    'filekind' : 'wavelengthrange',
+    'filetype' : 'WAVELENGTHRANGE',
+    'instrument' : 'NIRCAM',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nircam_wavelengthrange_0005.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.PUPIL', 'META.INSTRUMENT.MODULE', 'META.EXPOSURE.TYPE'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : 'c60ac14d6993ab46abec64b915b0a56560cbf7e0',
+    'suffix' : 'wavelengthrange',
+    'text_descr' : 'Spectral Configurations',
+}
+
+selector = Match({
+    ('ANY', 'ANY', 'NRC_GRISM') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_wavelengthrange_0001.asdf',
+    }),
+    ('ANY', 'ANY', 'NRC_IMAGE|NRC_TACQ|NRC_CORON|NRC_FOCUS|NRC_DARK|NRC_FLAT|NRC_LED|NRC_WFSC|NRC_TACONFIRM|NRC_TSIMAGE') : 'N/A',
+    ('GRISMC', 'A', 'NRC_TSGRISM') : 'N/A',
+    ('GRISMC', 'B', 'NRC_TSGRISM') : 'N/A',
+    ('GRISMR', 'A', 'NRC_TSGRISM') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_wavelengthrange_0001.asdf',
+    }),
+    ('GRISMR', 'B', 'NRC_TSGRISM') : 'N/A',
+})

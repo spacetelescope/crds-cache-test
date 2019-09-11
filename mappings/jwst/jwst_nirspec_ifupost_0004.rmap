@@ -1,0 +1,22 @@
+header = {
+    'derived_from' : 'jwst_nirspec_ifupost_0003.rmap',
+    'file_ext' : '.asdf',
+    'filekind' : 'ifupost',
+    'filetype' : 'IFUPOST',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_ifupost_0004.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.EXPOSURE.TYPE',),),
+    'reference_to_dataset' : {
+        'EXP_TYPE' : 'META.EXPOSURE.TYPE',
+    },
+    'sha1sum' : 'f3c5e576405fda029b0a04225ab8c894f0796a6d',
+    'suffix' : 'ifupost',
+    'text_descr' : 'IFU post',
+}
+
+selector = Match({
+    'N/A' : 'N/A',
+    'NRS_IFU' : 'jwst_nirspec_ifupost_0001.asdf',
+})

@@ -1,0 +1,20 @@
+header = {
+    'derived_from' : 'jwst_nirspec_ifuslicer_0000.rmap',
+    'file_ext' : '.asdf',
+    'filekind' : 'ifuslicer',
+    'filetype' : 'IFUSLICER',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_ifuslicer_0001.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.EXPOSURE.TYPE',),),
+    'reference_to_dataset' : {
+        'EXP_TYPE' : 'META.EXPOSURE.TYPE',
+    },
+    'sha1sum' : '63895b382792c6934d32987b6e33c3de0b4ffcc6',
+    'suffix' : 'ifuslicer',
+    'text_descr' : 'IFU slicer',
+}
+
+selector = Match({
+})

@@ -1,0 +1,23 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_niriss_mask_0009.rmap',
+    'filekind' : 'MASK',
+    'instrument' : 'NIRISS',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_niriss_mask_0010.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.SUBARRAY.NAME'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '2b3e6366cea754a7a12aea4c98cb78ebbda0d898',
+    'substitutions' : {
+        'META.SUBARRAY.NAME' : {
+            'GENERIC' : 'N/A',
+        },
+    },
+}
+
+selector = Match({
+    ('NIS', 'GENERIC') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_niriss_mask_0004.fits',
+        '2015-11-01 00:00:00' : 'jwst_niriss_mask_0005.fits',
+    }),
+})

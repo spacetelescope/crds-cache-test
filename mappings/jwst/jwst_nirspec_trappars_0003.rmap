@@ -1,0 +1,24 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nirspec_trappars_0002.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'trappars',
+    'filetype' : 'TRAPPARS',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_trappars_0003.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR',), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : 'ae76833cd26a957570ac422ca4abd931c0d87c81',
+    'suffix' : 'trappars',
+    'text_descr' : 'Trap Capture and Decay Parameters',
+}
+
+selector = Match({
+    'NRS1' : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nirspec_trappars_0002.fits',
+    }),
+    'NRS2' : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nirspec_trappars_0001.fits',
+    }),
+})

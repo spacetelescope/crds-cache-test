@@ -1,0 +1,81 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nirspec_fflat_0001.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'FFLAT',
+    'filetype' : 'FORE-OPTICS FLATFIELD',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_fflat_0002.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.FILTER', 'META.EXPOSURE.TYPE'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '7fbf135d6866b1b39e1387ecbea6017bf17a8e16',
+    'suffix' : 'fflat',
+    'text_descr' : 'Fore-optics Flat Field',
+}
+
+selector = Match({
+    ('CLEAR', 'NRS_FIXEDSLIT') : UseAfter({
+        '2016-06-20 00:00:00' : 'jwst_nirspec_fflat_0017.fits',
+    }),
+    ('CLEAR', 'NRS_IFU') : UseAfter({
+        '2016-06-20 00:00:00' : 'jwst_nirspec_fflat_0007.fits',
+    }),
+    ('CLEAR', 'NRS_MSASPEC') : UseAfter({
+        '2016-06-20 00:00:00' : 'jwst_nirspec_fflat_0002.fits',
+    }),
+    ('F070LP', 'NRS_FIXEDSLIT') : UseAfter({
+        '2016-06-20 00:00:00' : 'jwst_nirspec_fflat_0006.fits',
+    }),
+    ('F070LP', 'NRS_IFU') : UseAfter({
+        '2016-06-20 00:00:00' : 'jwst_nirspec_fflat_0008.fits',
+    }),
+    ('F070LP', 'NRS_MSASPEC') : UseAfter({
+        '2016-06-20 00:00:00' : 'jwst_nirspec_fflat_0021.fits',
+    }),
+    ('F100LP', 'NRS_FIXEDSLIT') : UseAfter({
+        '2016-06-20 00:00:00' : 'jwst_nirspec_fflat_0014.fits',
+    }),
+    ('F100LP', 'NRS_IFU') : UseAfter({
+        '2016-06-20 00:00:00' : 'jwst_nirspec_fflat_0015.fits',
+    }),
+    ('F100LP', 'NRS_MSASPEC') : UseAfter({
+        '2016-06-20 00:00:00' : 'jwst_nirspec_fflat_0018.fits',
+    }),
+    ('F110W', 'NRS_FIXEDSLIT') : UseAfter({
+        '2016-06-20 00:00:00' : 'jwst_nirspec_fflat_0019.fits',
+    }),
+    ('F110W', 'NRS_IFU') : UseAfter({
+        '2016-06-20 00:00:00' : 'jwst_nirspec_fflat_0016.fits',
+    }),
+    ('F110W', 'NRS_MSASPEC') : UseAfter({
+        '2016-06-20 00:00:00' : 'jwst_nirspec_fflat_0012.fits',
+    }),
+    ('F140X', 'NRS_FIXEDSLIT') : UseAfter({
+        '2016-06-20 00:00:00' : 'jwst_nirspec_fflat_0001.fits',
+    }),
+    ('F140X', 'NRS_IFU') : UseAfter({
+        '2016-06-20 00:00:00' : 'jwst_nirspec_fflat_0005.fits',
+    }),
+    ('F140X', 'NRS_MSASPEC') : UseAfter({
+        '2016-06-20 00:00:00' : 'jwst_nirspec_fflat_0020.fits',
+    }),
+    ('F170LP', 'NRS_FIXEDSLIT') : UseAfter({
+        '2016-06-20 00:00:00' : 'jwst_nirspec_fflat_0003.fits',
+    }),
+    ('F170LP', 'NRS_IFU') : UseAfter({
+        '2016-06-20 00:00:00' : 'jwst_nirspec_fflat_0013.fits',
+    }),
+    ('F170LP', 'NRS_MSASPEC') : UseAfter({
+        '2016-06-20 00:00:00' : 'jwst_nirspec_fflat_0011.fits',
+    }),
+    ('F290LP', 'NRS_FIXEDSLIT') : UseAfter({
+        '2016-06-20 00:00:00' : 'jwst_nirspec_fflat_0004.fits',
+    }),
+    ('F290LP', 'NRS_IFU') : UseAfter({
+        '2016-06-20 00:00:00' : 'jwst_nirspec_fflat_0010.fits',
+    }),
+    ('F290LP', 'NRS_MSASPEC') : UseAfter({
+        '2016-06-20 00:00:00' : 'jwst_nirspec_fflat_0009.fits',
+    }),
+})

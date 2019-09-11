@@ -1,0 +1,17 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_miri_drizpars_0000.rmap',
+    'filekind' : 'DRIZPARS',
+    'instrument' : 'MIRI',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_miri_drizpars_0001.rmap',
+    'observatory' : 'JWST',
+    'parkey' : ((), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '58bd4ff8db4b05d517240510b54baa3d0410872d',
+}
+
+selector = Match({
+    () : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_miri_drizpars_0001.fits',
+    }),
+})

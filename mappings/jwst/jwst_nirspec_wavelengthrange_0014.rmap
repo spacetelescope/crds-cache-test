@@ -1,0 +1,30 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nirspec_wavelengthrange_0013.rmap',
+    'file_ext' : '.asdf',
+    'filekind' : 'wavelengthrange',
+    'filetype' : 'WAVELENGTHRANGE',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_wavelengthrange_0014.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.EXPOSURE.TYPE',), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'reference_to_dataset' : {
+        'EXP_TYPE' : 'META.EXPOSURE.TYPE',
+    },
+    'sha1sum' : '425710b605fd204b2fbb849c692690d1b11c90f2',
+    'suffix' : 'wavelengthrange',
+    'text_descr' : 'NIRSPEC Spectral Configurations',
+}
+
+selector = Match({
+    'N/A' : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nirspec_wavelengthrange_0002.asdf',
+    }),
+    'NRS_AUTOFLAT' : 'N/A',
+    'NRS_AUTOWAVE' : 'N/A',
+    'NRS_DARK' : 'N/A',
+    'NRS_TACQ|NRS_TASLIT|NRS_TACONFIRM|NRS_CONFIRM|NRS_FIXEDSLIT|NRS_IFU|NRS_MSASPEC|NRS_IMAGE|NRS_FOCUS|NRS_MIMF|NRS_BOTA|NRS_LAMP|NRS_BRIGHTOBJ' : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_nirspec_wavelengthrange_0004.asdf',
+    }),
+})

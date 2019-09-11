@@ -1,0 +1,21 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nircam_tsophot.rmap',
+    'file_ext' : '.asdf',
+    'filekind' : 'TSOPHOT',
+    'filetype' : 'TSOPHOT',
+    'instrument' : 'NIRCAM',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nircam_tsophot_0001.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.EXPOSURE.TYPE', 'META.VISIT.TSOVISIT'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '304ef69d5388df13f308ea7361b330df02a79e46',
+    'suffix' : 'tsophot',
+    'text_descr' : 'TSO Aperture Photometry Parameters',
+}
+
+selector = Match({
+    ('NOT NRC_TSIMAGE', 'ANY') : 'N/A',
+    ('NRC_TSIMAGE', 'FALSE') : 'N/A',
+    ('NRC_TSIMAGE', 'TRUE') : 'N/A',
+})

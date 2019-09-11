@@ -1,0 +1,22 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_niriss_photom_0009.rmap',
+    'filekind' : 'PHOTOM',
+    'instrument' : 'NIRISS',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_niriss_photom_0010.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR',), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '38201a07653008b4343b40c5f8b1e9aa08dfb7a7',
+}
+
+comment = """
+May 3 2016 comment: Deleted file 0017 which had a latter useafter date and 
+not rejected by the new delivery. This file shoiuld not be used.
+"""
+
+selector = Match({
+    'NIS' : UseAfter({
+        '2010-01-01 00:00:00' : 'jwst_niriss_photom_0019.fits',
+    }),
+})

@@ -1,0 +1,33 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nirspec_extract1d_0006.rmap',
+    'file_ext' : '.json',
+    'filekind' : 'EXTRACT1D',
+    'filetype' : 'EXTRACT1D',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_extract1d_0007.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.EXPOSURE.TYPE',), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'reference_to_dataset' : {
+        'EXP_TYPE' : 'META.EXPOSURE.TYPE',
+    },
+    'sha1sum' : 'b00a0790adcd07fbc4bb4ab1d38e7558d86df016',
+    'suffix' : 'extract1d',
+    'text_descr' : '1-D Spectral Extraction',
+}
+
+selector = Match({
+    'NRS_BRIGHTOBJ' : UseAfter({
+        '2001-01-01 00:00:00' : 'jwst_nirspec_extract1d_0006.json',
+    }),
+    'NRS_FIXEDSLIT|NRS_BRIGHTOBJ' : UseAfter({
+        '2001-01-01 00:00:00' : 'jwst_nirspec_extract1d_0004.json',
+    }),
+    'NRS_IFU' : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nirspec_extract1d_0005.json',
+    }),
+    'NRS_MSASPEC' : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nirspec_extract1d_0003.json',
+    }),
+})

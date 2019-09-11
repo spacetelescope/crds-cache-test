@@ -1,0 +1,55 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nirspec_dark_0007.rmap',
+    'filekind' : 'DARK',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_dark_0008.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.SUBARRAY.NAME'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '57d3adccff3a2c8f28bda24cec1f41722a2a323c',
+    'substitutions' : {
+        'META.SUBARRAY.NAME' : {
+            'GENERIC' : 'N/A',
+        },
+    },
+}
+
+selector = Match({
+    ('NRS1', 'ALLSLITS') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nirspec_dark_0007.fits',
+        '2013-01-01 00:00:00' : 'jwst_nirspec_dark_0028.fits',
+    }),
+    ('NRS1', 'FULL') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nirspec_dark_0022.fits',
+        '2009-06-25 22:14:38.296' : 'jwst_nirspec_dark_0006.fits',
+        '2010-06-01 00:00:00' : 'jwst_nirspec_dark_0023.fits',
+        '2013-01-01 00:00:00' : 'jwst_nirspec_dark_0024.fits',
+        '2013-07-01 00:00:00' : 'jwst_nirspec_dark_0025.fits',
+        '2014-07-01 00:00:00' : 'jwst_nirspec_dark_0026.fits',
+    }),
+    ('NRS1', 'S1600A1') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_nirspec_dark_0029.fits',
+    }),
+    ('NRS1', 'STRIPE') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_nirspec_dark_0027.fits',
+    }),
+    ('NRS2', 'ALLSLITS') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nirspec_dark_0009.fits',
+        '2013-01-01 00:00:00' : 'jwst_nirspec_dark_0036.fits',
+    }),
+    ('NRS2', 'FULL') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nirspec_dark_0030.fits',
+        '2009-06-25 22:14:38.296' : 'jwst_nirspec_dark_0008.fits',
+        '2010-06-01 00:00:00' : 'jwst_nirspec_dark_0031.fits',
+        '2013-01-01 00:00:00' : 'jwst_nirspec_dark_0032.fits',
+        '2013-07-01 00:00:00' : 'jwst_nirspec_dark_0033.fits',
+        '2014-07-01 00:00:00' : 'jwst_nirspec_dark_0034.fits',
+    }),
+    ('NRS2', 'S200B1') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_nirspec_dark_0037.fits',
+    }),
+    ('NRS2', 'STRIPE') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_nirspec_dark_0035.fits',
+    }),
+})

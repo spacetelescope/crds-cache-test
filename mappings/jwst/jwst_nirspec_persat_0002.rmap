@@ -1,0 +1,19 @@
+header = {
+    'derived_from' : 'jwst_nirspec_persat_0001.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'persat',
+    'filetype' : 'PERSAT',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_persat_0002.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR',),),
+    'sha1sum' : '16f172aad6d5e386a8c528c150ca25e23331dc1e',
+    'suffix' : 'persat',
+    'text_descr' : 'Persistence Saturation Threshold',
+}
+
+selector = Match({
+    'NRS1' : 'jwst_nirspec_persat_0001.fits',
+    'NRS2' : 'jwst_nirspec_persat_0002.fits',
+})

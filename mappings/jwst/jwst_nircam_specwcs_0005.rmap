@@ -1,0 +1,36 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nircam_specwcs_0004.rmap',
+    'file_ext' : '.asdf',
+    'filekind' : 'SPECWCS',
+    'filetype' : 'SPECWCS',
+    'instrument' : 'NIRCAM',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nircam_specwcs_0005.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.PUPIL', 'META.INSTRUMENT.MODULE', 'META.EXPOSURE.TYPE'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'reference_to_dataset' : {
+        'EXP_TYPE' : 'META.EXPOSURE.TYPE',
+        'MODULE' : 'META.INSTRUMENT.MODULE',
+        'PUPIL' : 'META.INSTRUMENT.PUPIL',
+    },
+    'sha1sum' : '1d95f71654e1f69200e1720f8c0e60af26eb2c6f',
+    'suffix' : 'specwcs',
+    'text_descr' : 'Wide Field Slitless Spectral World Coordinate System',
+}
+
+selector = Match({
+    ('ANY', 'ANY', 'NRC_IMAGE|NRC_TACQ|NRC_CORON|NRC_FOCUS|NRC_DARK|NRC_FLAT|NRC_LED|NRC_WFSC|NRC_TACONFIRM|NRC_TSIMAGE') : 'N/A',
+    ('GRISMC', 'A', 'NRC_GRISM|NRC_TSGRISM') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_specwcs_0011.asdf',
+    }),
+    ('GRISMC', 'B', 'NRC_GRISM|NRC_TSGRISM') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_specwcs_0012.asdf',
+    }),
+    ('GRISMR', 'A', 'NRC_GRISM|NRC_TSGRISM') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_specwcs_0010.asdf',
+    }),
+    ('GRISMR', 'B', 'NRC_GRISM|NRC_TSGRISM') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_specwcs_0009.asdf',
+    }),
+})

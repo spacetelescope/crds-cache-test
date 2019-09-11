@@ -1,0 +1,19 @@
+header = {
+    'derived_from' : 'jwst_fgs_trappars_0001.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'trappars',
+    'filetype' : 'TRAPPARS',
+    'instrument' : 'FGS',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_fgs_trappars_0002.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR',),),
+    'sha1sum' : '15555cd64271af51579cd1a9a8c414bdbf3e61bd',
+    'suffix' : 'trappars',
+    'text_descr' : 'Trap Capture and Decay Parameters',
+}
+
+selector = Match({
+    'GUIDER1' : 'jwst_fgs_trappars_0001.fits',
+    'GUIDER2' : 'jwst_fgs_trappars_0002.fits',
+})
