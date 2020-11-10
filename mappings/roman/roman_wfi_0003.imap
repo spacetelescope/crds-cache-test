@@ -1,0 +1,13 @@
+header = {
+    'derived_from' : 'roman_wfi_0002.imap',
+    'instrument' : 'WFI',
+    'mapping' : 'INSTRUMENT',
+    'name' : 'roman_wfi_0003.imap',
+    'observatory' : 'ROMAN',
+    'parkey' : ('REFTYPE',),
+    'sha1sum' : '8eca65401c87f074d900ca3757ee7105ca0a4867',
+}
+
+selector = {
+    'FLAT' : 'roman_wfi_flat_0004.rmap',
+}
