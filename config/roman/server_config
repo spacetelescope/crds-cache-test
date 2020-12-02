@@ -1,4 +1,4 @@
-{'bad_files_list': ['roman_wfi_flat_0005.rmap'],
+{'bad_files_list': ['roman_wfi_flat_0005.rmap', 'roman_wfi_flat_0788.asdf'],
  'config_url': {'roman': 'https://roman-crds-dev.stsci.edu/unchecked_get/config/roman/'},
  'connected': True,
  'context_history': [['2020-11-06 16:42:44.900518',
