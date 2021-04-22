@@ -4,8 +4,8 @@ header = {
     'mapping' : 'PIPELINE',
     'name' : 'roman_0005.pmap',
     'observatory' : 'ROMAN',
-    'parkey' : ('META.INSTRUMENT.NAME',),
-    'sha1sum' : '3c4032da89186aef77bc67952c6c7ea65d378980',
+    'parkey' : ('ROMAN.META.INSTRUMENT.NAME',),
+    'sha1sum' : 'a599010ee1825db853cd4ccf38859a8f1eaa29f3',
 }
 
 selector = {
