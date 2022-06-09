@@ -5,10 +5,11 @@ header = {
     'name' : 'roman_wfi_0004.imap',
     'observatory' : 'ROMAN',
     'parkey' : ('REFTYPE',),
-    'sha1sum' : '4a0777ac7914d33fd7b417bcf5ae966d2bfad245',
+    'sha1sum' : 'b34790b118373fc1de0ace3039dae9a0d3169a72',
 }
 
 selector = {
     'DARK' : 'roman_wfi_dark_0001.rmap',
+    'DISTORTION' : 'roman_wfi_distortion_0001.rmap',
     'FLAT' : 'roman_wfi_flat_0004.rmap',
 }
