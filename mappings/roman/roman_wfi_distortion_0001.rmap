@@ -1,0 +1,23 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'roman_wfi_distortion.rmap',
+    'file_ext' : '.asdf',
+    'filekind' : 'DISTORTION',
+    'filetype' : 'DISTORTION',
+    'instrument' : 'WFI',
+    'ld_tpn' : 'wfi_distortion_ld.tpn',
+    'mapping' : 'REFERENCE',
+    'name' : 'roman_wfi_distortion_0001.rmap',
+    'observatory' : 'ROMAN',
+    'parkey' : (('ROMAN.META.INSTRUMENT.DETECTOR', 'ROMAN.META.INSTRUMENT.OPTICAL_ELEMENT'), ('ROMAN.META.EXPOSURE.START_TIME',)),
+    'sha1sum' : '642a007d89ae3d9f2e718b9bf43c49b60ac79632',
+    'suffix' : 'distortion',
+    'text_descr' : 'Distortion',
+    'tpn' : 'wfi_distortion.tpn',
+}
+
+selector = Match({
+    ('WFI01', 'DARK|F062|F087|F106|F129|F158|F184|F213|GRISM|PRISM|W146') : UseAfter({
+        '2020-01-01T00:00:00' : 'roman_wfi_distortion_0001.asdf',
+    }),
+})
