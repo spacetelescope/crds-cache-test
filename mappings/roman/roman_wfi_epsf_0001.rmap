@@ -13,13 +13,16 @@ header = {
     'name' : 'wfi_epsf.rmap',
     'observatory' : 'roman',
     'parkey' : (('ROMAN.META.INSTRUMENT.DETECTOR', 'ROMAN.META.INSTRUMENT.OPTICAL_ELEMENT'), ('ROMAN.META.EXPOSURE.START_TIME',)),
-    'sha1sum' : '778a70d5ab66844b8e24dd59dcef1c845b43f29d',
+    'sha1sum' : '10ae6b4e877cc73a653322a3d04bf1b02ec32889',
     'suffix' : 'epsf',
     'text_descr' : 'Empirical Point Spread Function',
     'tpn' : 'wfi_epsf.tpn',
 }
 
 selector = Match({
+    ('WFI02', 'F158') : UseAfter({
+        '2020-01-01 00:00:00' : 'roman_wfi_epsf_0001.asdf',
+    }),
     ('WFI16', 'F158') : UseAfter({
         '2020-01-01 00:00:00' : 'roman_wfi_epsf_0001.asdf',
     }),
