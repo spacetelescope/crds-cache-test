@@ -1,0 +1,17 @@
+header = {
+    'derived_from' : 'roman_wfi_0005.imap',
+    'instrument' : 'WFI',
+    'mapping' : 'INSTRUMENT',
+    'name' : 'roman_wfi_0006.imap',
+    'observatory' : 'ROMAN',
+    'parkey' : ('REFTYPE',),
+    'sha1sum' : '299f4e0eaf4969a765d2994a7f7e318a7fe68f8d',
+}
+
+selector = {
+    'DARK' : 'roman_wfi_dark_0001.rmap',
+    'DISTORTION' : 'roman_wfi_distortion_0001.rmap',
+    'EPSF' : 'roman_wfi_epsf_0001.rmap',
+    'FLAT' : 'roman_wfi_flat_0004.rmap',
+    'PARS-EXPOSUREPIPELINE' : 'roman_wfi_pars-exposurepipeline_0001.rmap',
+}

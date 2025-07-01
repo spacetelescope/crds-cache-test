@@ -1,0 +1,13 @@
+header = {
+    'derived_from' : 'roman_0006.pmap',
+    'description' : 'Initial delivery',
+    'mapping' : 'PIPELINE',
+    'name' : 'roman_0007.pmap',
+    'observatory' : 'ROMAN',
+    'parkey' : ('ROMAN.META.INSTRUMENT.NAME',),
+    'sha1sum' : 'd754963f75215ecc15eeed95908b35581c72baa2',
+}
+
+selector = {
+    'WFI' : 'roman_wfi_0006.imap',
+}
