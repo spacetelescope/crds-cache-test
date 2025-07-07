@@ -23,7 +23,7 @@ selector = Match({
     ('WFI02', 'F158') : UseAfter({
         '2020-01-01 00:00:00' : 'roman_wfi_epsf_0001.asdf',
     }),
-    ('WFI16', 'F158') : UseAfter({
+    ('N/A', 'F158') : UseAfter({
         '2020-01-01 00:00:00' : 'roman_wfi_epsf_0001.asdf',
     }),
 })
